@@ -1,5 +1,5 @@
-Here you can say lots of fun things about your site.
+I do fermentation as my job. I study data science on the side.
 
-Maybe say a some things about yourself.
+I plan to post things related to health, travel, as well as random projects.
 
-Or maybe what you plan to blog about.
+I'm based in the Bay Area.
