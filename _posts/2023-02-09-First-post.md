@@ -30,16 +30,17 @@ However there were challenges to getting started. What recipes to use? How to so
 ### Plan Details
 
 What:
-A 21-day gut cleansing diet that primarily focused on:
-No grains (rice, bread, noodles,
-No gluten (bread, flour, soy sauce)
-No legumes (chickpeas, lentils, beans)
-No dairy (butter, milk, cheese)
-Heavy limit on sugars (the worst )
-No fructose (only berries)
-No eggs (specific to me, food sensitivity)
-No soy (Tofu, soy sauce)
-No processed foods
+
+- A 21-day gut cleansing diet that primarily focused on:
+- No grains (rice, bread, noodles,
+- No gluten (bread, flour, soy sauce)
+- No legumes (chickpeas, lentils, beans)
+- No dairy (butter, milk, cheese)
+- Heavy limit on sugars (the worst )
+- No fructose (only berries)
+- No eggs (specific to me, food sensitivity)
+- No soy (Tofu, soy sauce)
+- No processed foods
 
 Yes fish, chicken, pork, beef
 Yes berries
@@ -59,13 +60,18 @@ Dairy
 Soy
 Wheat
 
-### So how did it go?
+**_So how did it go?_**
 
-Week 1
+### Week 1
+
 It was all about adjustment, and adjustments. New meals and different types of snacks. No chocolate or only limited selections of fruits. Chocolate berry smoothies in the morning. Celery and carrots for snack. First meals consisted of herb baked fish and tomato soup. Then turkey lettuce wraps.
 
-![Turkey Wrap](/jhwaffles.github.io/assets/turkey_wrap.png)
+![Turkey Wrap](/docs/assets/turkey_wrap.png)
 
 I immediately noticed there was no sleepiness/grogginess after meals, or any desire to take naps which was something common for me. Literally zero food comas. The first few days I was peeing a lot and had to replenish with water. Also there was no bloating whatsoever after meals which was a revelation.
 
-Another observation - it was tough to control snacking. realizing how many snacks I was eating work (benefits of corporate)
+Another observation - it was tough to control snacking. realizing how many snacks I was eating work (benefits of corporate).
+
+###Week 2
+
+I felt the fruits of the labor kicking. I had the best poo of my life. Like 100/100 on the poo rating scale. It felt like a continuous hum of energy. I had expected to feel less energy in physical activities such as climbing - but felt really good, and performance was as good as ever. Also branched out to new snacks (carrots and celery sticks with almond butter gets old pretty fast). Masala peas.
