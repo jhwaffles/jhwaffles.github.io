@@ -21,6 +21,7 @@ However there were challenges to getting started. What recipes to use? How to so
 ### Motivations
 
 **_Health motivation_** - Would the chronic symptoms go away? Better yet could I discover what foods are linked to certain symptoms?
+
 **_Experience_** – Readings and more awareness of how important the gut microbiome is to overall body health. I wanted first hand experience.
 
 **_Experimentation_** - this was an experiment and I was interested to see the effects for myself. Process development y’all.
@@ -29,26 +30,25 @@ However there were challenges to getting started. What recipes to use? How to so
 
 ### Plan Details
 
-What:
-
 A 21-day gut cleansing diet that primarily focused on:
 
 - No grains (rice, bread, noodles,
 - No gluten (bread, flour, soy sauce)
 - No legumes (chickpeas, lentils, beans)
 - No dairy (butter, milk, cheese)
-- Heavy limit on sugars (the worst )
+- Heavy limit on added sugars
 - No fructose (only berries)
 - No eggs (specific to me, food sensitivity)
 - No soy (Tofu, soy sauce)
 - No processed foods
+- No to certain oils (canola, vegetable)
 
 - Yes fish, chicken, pork, beef
 - Yes berries
 - Yes leafy greens
 - Yes mushrooms
-- Yes to certain nuts (almonds, macadamia but no peanuts)
-- Yes olive oil, coconut oil (No canola,
+- Yes to certain nuts (almonds, macademia)
+- Yes olive oil, coconut oil
 
 - Supplements of saccharomyces.
 - Digestion aids.
@@ -57,7 +57,7 @@ A 21-day gut cleansing diet that primarily focused on:
 
 Reintroduction phase would focus on 4 foods/main areas:
 
-- Eggs (Since I have high sensitity)
+- Eggs
 - Dairy
 - Soy
 - Wheat
@@ -66,19 +66,19 @@ Reintroduction phase would focus on 4 foods/main areas:
 
 ### Week 1
 
-Week 1 was all about acclimating and adjustments. New meals and different types of snacks. No chocolate or only limited selections of fruits. Chocolate berry smoothies in the morning. Celery and carrots for snack. First meals consisted of herb baked fish and tomato soup. Then turkey lettuce wraps.
+Week 1 was all about acclimation and the body adjusting to these different meals and snacks. Some of these needed getting used to as I am used to eating chocolate and a variety of fruits. We had chocolate berry smoothies in the morning, and celery/carrots for snacks. The first big meals consisted of herb baked fish and tomato soup, as well as turkey lettuce wraps.
 
 ![Turkey Wrap](/docs/assets/turkey_wrap.png)
 ![Herb Fish](/docs/assets/herb_fish.png)
 ![Maitake](/docs/assets/maitake.png)
 
-I immediately noticed there was no sleepiness/grogginess after meals, or any desire to take naps which was something common for me. Literally zero food comas. The first few days I was peeing a lot and had to replenish with water. Also there was no bloating whatsoever after meals which was a revelation.
+I immediately noticed there was no sleepiness/grogginess after meals, or any desire to take naps (which is unusual for me). The feeling of food comas after meals went away completely. The first few days I was peeing a lot and had to replenish by drinking lots of water. Also there was no bloating whatsoever after meals which was a revelation.
 
-Another observation - it was tough to control snacking. realizing how many snacks I was eating work (benefits of corporate).
+Another observation - it was tough to control snacking. I realized how many snacks I eat at work (as someone who takes full advantage of this)
 
 ### Week 2
 
-I felt the fruits of the labor kicking. I had the best poo of my life. Like 100/100 on the poo rating scale. It felt like a continuous hum of energy. I had expected to feel less energy in physical activities such as climbing - but felt really good, and performance was as good as ever. Also branched out to new snacks (carrots and celery sticks with almond butter gets old pretty fast). Masala peas.
+I felt the fruits of the labor kicking in. This week I had the best poo of my life, like 100/100 on the poo rating scale. Energy was very good throughout the week - I describe it as a continuous hum of energy. I had expected to feel less energetic in physical activities such as climbing but my performance was as good as ever. I also discovered new snacks (carrots and celery sticks with almond butter gets old pretty fast). Masala peas from Berkeley Bowl!!!
 
 ![Avocado Salad](/docs/assets/avocado_salad.png)
 ![Roast Salmon](/docs/assets/roast_salmon.png)
@@ -86,7 +86,7 @@ I felt the fruits of the labor kicking. I had the best poo of my life. Like 100/
 
 ### Week 3
 
-Things actually got tougher in the 3rd week. I noticed enthusiasm was slowing down due to salads consisting a lot of meals. I also noticed I was getting cranky without sugar/foods I craved.
+Things got tougher in the 3rd week. I noticed my enthusiasm was slowing down due to eating a lot of salads for meals. I also noticed I was getting cranky - I wonder if lacking sugar/other nutrients contributed to this.
 
 ![Almond Chicken](/docs/assets/almond_chicken.png)
 ![Roast Mushrooms](/docs/assets/roast_mushrooms.png)
@@ -96,39 +96,40 @@ Things actually got tougher in the 3rd week. I noticed enthusiasm was slowing do
 
 We introduced the following foods back into diet. 2 days on for each type of food then 3 days off before reintroducing the next food.
 
-- Eggs. Felt like stomach problems after the first meal. But then the second meal there were no problems. It makes me think this was shock to the system after going without eggs.
+- Eggs. There were stomach problems after the first meal with eggs. But then the second meal there were no problems.
 - Tofu. Felt fine except for one meal where we overstuffed with too much tofu during hotpot.
-- Dairy. No problems
+- Dairy. No issues.
 - Wheat. Felt sleepy the whole day. I wonder if it was a load of carbs or it was the gluten.
 
 ### Summary of observations:
 
-During the course of this experiment we tracked and quantified such as how many times acne, headaches, bowel movement... We even tried quantifying some more subjective things such as energy levels, irritability, focus etc. Here were the main observations:
+During the course of this experiment we tracked and quantified things such as headaches, severity of acne, bowel movement...etc. We even tried quantifying some more subjective things such as energy levels, irritability, and focus. Here were the main observations:
 
 ![Symptom](/docs/assets/symptoms.png)
 
-- Energy - I felt like I could keep going most days in terms of work/schoolwork/daily tasks. No stopping. A constant hum is how I describe it.
+- Energy - I felt like I could keep going most days in terms of work/schoolwork/daily tasks. A constant hum is how I describe it.
 - Physical Performance – Felt really good, as good as I’ve ever felt. Could climb at the same levels and do the same amount of pullups.
 - Irritability – By the end, noticed I was getting crankier.
-- Weight loss - No change any weight. Cynthia did (9 lbs in 6 weeks)!
+- Weight loss - No change any weight. Cynthia lost 9 lbs in 6 weeks!
 
 ### Was the diet successful?
 
-Did I discover any foods that explained symptoms! Yes! Definitely found links for types of foods that caused low energy. And bloatiness.
+Did I discover any foods that explained symptoms! Yes! Definitely found links for types of foods that affected energy levels. And bloatiness.
 
-Did it cure all of my mystery chronic symptoms? No. don’t know what I was expecting when I came in that I would figure out the solution to all my problems.
+Did it cure all of my mystery chronic symptoms? No - although I wasn't expecting that I would figure out the answer to all my problems.
 
-Increased awareness - Now I check ingredient labels for everything. Much more awareness where sugars came from.
+Increased awareness - Now I do more research when choosing foods and check ingredient labels for everything. I have much more awareness on what foods have what levels of sugars.
 
-Saw firsthand positive effects of lower sugar.
+I saw firsthand positive effects of eating less sugar.
 
-Really like the increased energy and ‘cleaner’ feeling digestion. No upset stomachs that immobilize me. More consistent ‘good’ energy.
+I really like the increased energy and ‘cleaner’ feeling digestion. I used to get upset stomach that would immobilize me/make me want to lie down certain days. I felt a more consistent ‘good’ energy.
 
 ### Other takeways:
 
 Challenges in execution – it takes A LOT of effort to come up with a plan for meals and follow through. More on this later.
 
-Be deliberate in what sugars to eat. Can still eat sugar, but going to avoid from white processed sugar, white bread. Used to have unlimited allowance. Going to limit.
+Be deliberate in what sugars to eat. I'll still eat sugar, but will avoid white processed sugar, white bread. I used to have unlimited allowance of sugars but now I will track/limit my intake.
 
-But happiness = food and taste.
-Personal goal - Shift diet to more veggies. Used to do 30% protein 50% carbs 20% veggies. Move to 40% protein, 40% veggies, 20% carbs.
+Eating salads repeatedly can get old. Variety is still important.
+
+Personal goal to shift diet to more veggies. For meals I used to have 30% protein, 50% carbs, 20% veggies. Now my goal is to have 40% protein, 40% veggies, 20% carbs.
