@@ -30,7 +30,7 @@ It was important to match the meals to their taste. Meaning we incorporated asia
 
 Our first week started with a trip to costco together. We also incorporated some foods they already had in the fridge. Here are some of the foods we ate the first week:
 
-![](/docs/assets/fish_bok_choy.jpg)
+![](/docs/assets/fish_bok_choy.jpg#center)
 _Fish with Bok choy_
 ![Pan Fried Fish with Soy Sauce and Ginger](/docs/assets/pan_fish.jpg)
 ![Salad and Shrimp](/docs/assets/salad_and_shrimp.jpg)
