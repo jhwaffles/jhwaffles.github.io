@@ -1,10 +1,10 @@
 ## Visiting Parents
 
-My dad has always been interested in losing weight. Although he enjoys watching sports, exercise itself has always been a chore for him. Running outside was hard on the knees. He didn't like to go to the gym either. I bought a treadmill but it went primarily unused. He has tried dieting - previous attempts included calorie counting but never incurred any lasting habits/change in weight. Mostly he just felt hungry and reverted back to normal habits.
+My dad has been trying to lose weight for a long time - ever since I could remember. Although he enjoys watching sports, exercise itself has always been a chore for him. Running outside was hard on the knees. He didn't like to go to the gym either. Early on before COVID was a thing I bought a treadmill to use at home but it went primarily unused. He has tried dieting - previous attempts included calorie counting and/or skipping meals. Mostly he just felt hungry and reverted back to normal habits within a week or two.
 
-My dad had many reasons for wanting to lose weight. Family members (including my grandparents when they were around) constantly told him to lose weight. Health was a big reason - his doctor said he needed to lose 20 lbs to be in better condition. I personally think his greatest reason was simple - he just wanted to look better in photos. I should mention that my dad is retired.
+My dad had many reasons for wanting to lose weight. He would always get comments from friends or visiting relatives, including my grandparents when they were around. Health was a big factor - his doctor said he needed to lose 20 lbs to be in better condition. Most of all, he wanted to look better in photos - Nothing makes him happier than when someone leave a positive comment in family photos. So in other words he wanted to shut down the haters, improve health, and look good. I should mention that my dad is retired.
 
-Hearing this discontent, Cynthia wondered if there was anything functional medicine/dieting could do to help my dad. It seemed like he was genuinely interested in losing weight but he was discouraged by previous attempts. In the midst of a sunny hike in the Oakland hills, we discussed putting my parents on a “program” of a low carb/diet, focus on losing weight (My mom was also interested, not because she needed to lose weight, more out of FOMO). Coming off of a recent “program” for ourselves (Link), we talked of guiding my parents through a similar program.
+Hearing that my dad was struggling, Cynthia wondered if she could come up with a program to help my dad improve his condition. It seemed like he was genuinely interested in losing weight but was discouraged by previous attempts. In the midst of a sunny hike in the Oakland hills, we discussed putting my parents on an eating “program” with a focus on losing weight. I should note my mom was also interested, not because she needed to lose weight but because she did not want to miss out (FOMO). Coming off of a recent “program” for ourselves (Link), we talked of guiding my parents through a similar program.
 
 ## The plan
 
@@ -12,7 +12,9 @@ Here is what we came up with: my parents would go on a meal plan (crafted by Cyn
 
 We told them about this "offer". Although hesitant, my dad was eventually persuaded and accepted.
 
-As for the meal plan, we really wanted to limit the carbohydrates and digestible sugars.
+As for the meal plan, the goal was to **shift eating style from majority carbohydrate to 80% protein/fats and 20% carbohydrates. The carbohydrates were to have high fiber content (vegetable and fruits). **
+
+Some more specific guidelines:
 
 -No rice, noodles, breads, or grains.
 -No dairy
@@ -28,7 +30,8 @@ It was important to match the meals to their taste. Meaning we incorporated asia
 
 Our first week started with a trip to costco together. We also incorporated some foods they already had in the fridge. Here are some of the foods we ate the first week:
 
-![Fish with Bok choy](/docs/assets/fish_bok_choy.jpg)
+![](/docs/assets/fish_bok_choy.jpg)
+_Fish with Bok choy_
 ![Pan Fried Fish with Soy Sauce and Ginger](/docs/assets/pan_fish.jpg)
 ![Salad and Shrimp](/docs/assets/salad_and_shrimp.jpg)
 ![Lettuce Wrap with Fixings](/docs/assets/lettuce_wrap_with_fixings.jpg)
@@ -88,7 +91,7 @@ In retrospect the visit was productive for all parties. Cynthia and I learned a 
 
 For example, Dad came with us to shop and purchase food. The act of us cooking and preparing meals for 2 weeks straight allowed him plenty of chances to watch, and critique (lol).
 
-During the time parents had lots of questions. We had talks about nutrition labels, and what was considered nutritious and what was not (processed sugars). We explained the mechanism in which the body processed sugar and what leads to diabetes (Link). Cynthia is the expert on health and has a lot of knowledge. My role was to support the convos and clarify/emphasize points.
+During the time parents had lots of questions. We had talks about nutrition labels, and what was considered nutritious and what was not (processed sugars). We explained the mechanism in which the body processed sugar and what leads to diabetes (Link). Cynthia is the expert on health and has a lot of knowledge. My role was to support the convos and translate.
 
 Also **very important** and probably the biggest factor: The parents have been really easy to work with so far and have been very positive. They had an open mind going into this whole thing which was crucial.
 
