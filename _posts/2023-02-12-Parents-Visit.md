@@ -28,8 +28,9 @@ It was important to match the meals to their taste. Meaning we incorporated asia
 
 Here are examples of my dad's 'standard' food.
 
-![](/docs/assets/Jerry_Breakfast_220611.jpeg#center)
-_Egg, Banana, Beef Jerky, Cereal and Soy milk, Melon_
+| ![Jerry_Breakfast_220611](/docs/assets/Jerry_Breakfast_220611.jpeg#center) |
+| :------------------------------------------------------------------------: |
+|           _Egg, Banana, Beef Jerky, Cereal and Soy milk, Melon_            |
 
 ![](/docs/assets/Jerry_Breakfast_220612.jpeg#center)
 _Steamed Bun, Sausage, Soy Milk, Fruit_
