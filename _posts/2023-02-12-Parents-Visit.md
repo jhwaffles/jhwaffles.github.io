@@ -28,7 +28,7 @@ Some more specific guidelines:
 
 It was important to match the meals to their taste. Meaning we incorporated asian ingredients and seasoning (soy sauce, tofu, ginger, etc) into the meals.
 
-### Baseline Examples
+### Baseline
 
 Here are examples of my dad's "standard" food.
 
@@ -60,21 +60,21 @@ Here are examples of my dad's "standard" food.
 | :---------------------------------------------------------------------: |
 | _Sausage McMuffin, Hash Brown, Green Bean Soup, Shrimp and Bean, Fruit_ |
 
-### 1st week (June 18-June 25)
+### Week 1 (June 18-June 25)
 
 Our first week started with a trip to costco together. We also incorporated some foods they already had in the fridge. Here are some of the foods we ate the first week:
 
-|      ![](/docs/assets/fish_bok_choy.jpg#center)      |
-| :--------------------------------------------------: |
-| _Pan Fried Fish with Soy Sauce and Ginger, Bok choy_ |
+|              ![](/docs/assets/fish_bok_choy.jpg#center)              |
+| :------------------------------------------------------------------: |
+| _Pan Fried Fish with Soy Sauce and Ginger, Bok choy, Tofu, Broccoli_ |
 
 | ![](/docs/assets/salad_and_shrimp.jpg) |
 | :------------------------------------: |
 |           _Salad and Shrimp_           |
 
-| ![](/docs/assets/lettuce_wrap_with_fixings.jpg) |
-| :---------------------------------------------: |
-|           _Lettuce Wrap with Fixings_           |
+|                ![](/docs/assets/lettuce_wrap_with_fixings.jpg)                |
+| :---------------------------------------------------------------------------: |
+| _Lettuce Wrap and Fixings (Tofu, Sirloin Strips, Pickled Veggies, Leftovers)_ |
 
 Luckily a lot of the dishes and sides my parents liked were compatible for this diet so it wasn't too hard to adjust the menu and cooking. For example Zha Jiang Mian (Black bean sauce noodle) is something they ate regularly and had the sauce for. We substituted the usual noodles with shirataki noodles (made from konjac yam, contains minimal digestible carbohydrates). My mom also has a stash of fake meat products (mostly soy protein) that we incorporated into the meals.
 
@@ -88,21 +88,21 @@ We also committed to go on a walk every evening. We talked about a range of topi
 
 There were a moments of low energy (likely due to the adjustment period and low blood sugar), but my parents remained very upbeat. Dad lost 3 kg in the first week! GJ dad!
 
-### 2nd week (June 25-July 02)
+### Week 2 (June 25-July 02)
 
 One week has passed and we are getting into the routine. Here are some of the foods we ate in the second week:
 
-| ![](/docs/assets/sop_buntut.jpg) |
-| :------------------------------: |
-|  _Sop Buntut (Indonesian Soup)_  |
+|      ![](/docs/assets/sop_buntut.jpg)       |
+| :-----------------------------------------: |
+| _Sop Buntut (Indonesian Soup), Side Dishes_ |
 
 | ![](/docs/assets/curry_veggies_eggs.jpg) |
 | :--------------------------------------: |
-|           _Curry Veggie Eggs_            |
+|      _Curry Veggies, Eggs, Shrimp_       |
 
-|   ![](/docs/assets/zha_jiang_mien_eggs.jpg)    |
-| :--------------------------------------------: |
-| _Zha Jiang Mien (Black Soybean Sauce Noddles)_ |
+|                ![](/docs/assets/zha_jiang_mien_eggs.jpg)                 |
+| :----------------------------------------------------------------------: |
+| _Zha Jiang Mien (Black Soybean Sauce Noddles), Fried Egg, Cabbage, Tofu_ |
 
 | ![](/docs/assets/basil_mushrooms.jpg) |
 | :-----------------------------------: |
@@ -114,25 +114,25 @@ Dad was interested in learning how to make the morning shake so I gave a demonst
 
 | ![](/docs/assets/layer_juice.jpg) |
 | :-------------------------------: |
-|     _Berry and greens shake_      |
+|     _Berry and Greens shake_      |
 
 | ![](/docs/assets/making_juice.jpg) |
 | :--------------------------------: |
-|         _Dad making shake_         |
+|       _Dad Preparing Shake_        |
 
 By this time work was getting busy and the day-to-day included driving to and back from work, cooking meals, going on a walk, then passing out. This period was exhausting but having Cynthia made it easier. It also helped that parents were learning and contributing. We realized the important thing was to continue building habits.
 
-### 3rd week (July 03-July 10)
+### Week 3 (July 03-July 10)
 
 By now the parents had the hang of things. I checked in every few days to see what food they prepared and if they had kept up with exercise. My parents were very diligent about sticking to the plan.
 
-Every morning my dad would send a picture in our group chat showing off his weight displayed on the digital scale. It became the thing he was looking forward to the most each day because of the visible progress. I shared a tracker I implemented on google sheets to log weight and exercise activity. With the aid of the bar chart, progress was easy to visualize.
+Every morning my dad would send a picture in our group chat showing off his weight displayed on the digital scale. It became the thing he was looking forward to the most each day because of the steady progress. I implemented a tracker on google sheets to log weight and exercise activity. With the aid of the bar chart, progress was easy to visualize.
 
 | ![](/docs/assets/weight_chart_zoom_in.png) |
 | :----------------------------------------: |
-|               _Weight Chart_               |
+|             _Weight over Time_             |
 
-After three weeks of commitment to the plan with home cooked meals mostly every day it was time to celebrate. It was a great bonding time, and **dad lost over 4 kg in 3 weeks.** Furthermore. Here is us getting a bowl in San Jose:
+After three weeks of commitment to the plan with home cooked meals mostly every day it was time to celebrate. It was a great bonding time, and **dad lost over 4 kg in 3 weeks.** Furthermore. Here is us getting eating out in San Jose:
 
 | ![](/docs/assets/eating_out_2.jpg) |
 | :--------------------------------: |
@@ -140,13 +140,13 @@ After three weeks of commitment to the plan with home cooked meals mostly every 
 
 ## Aftermath (August).
 
-Dad continually updates us on his weight every day. It looks my parents took parts of the 3 week program and continued going. They continued to be mindful of their food and limit carbs and went on walks nearly every day. It was even more exciting to see my dad continue to lose weight.
+Dad continued to provide updates on his weight. My parents took parts of the 3 week program and continued on with it. They continued to be mindful of their food and limit carbs and went on walks nearly every day. It was even more exciting to see my dad continue to lose weight.
 
 | ![](/docs/assets/weight_chart_zoom_out.png) |
 | :-----------------------------------------: |
 |               _Weight Chart_                |
 
-At one point my dad was below 82 kg, over 7 kg lower than the start (2 months ago)!
+Approximately a month after the program, my dad was <82 kg, over 7 kg lower than the start (2 months ago)!
 
 We also wanted to help my parents expand their exercise beyond walking. We decided to go to the park nearby to demonstrate some stretching and exercises (led by Cynthia).
 
@@ -156,12 +156,10 @@ We also wanted to help my parents expand their exercise beyond walking. We decid
 
 In retrospect the visit was productive for all parties. Cynthia and I learned a great deal and got to spend quality time with my parents. My mom and dad built healthier habits, and continued to follow through even after the three week plan. On paper, the plan of limiting carbs and regular exercise was backed by science but what made it effective was getting the parents involved in process, the conversations during dinner and walks, and ultimately our presence and support.
 
-For example, Dad came with us to shop and purchase food. The act of us cooking and preparing meals for 2 weeks straight allowed him plenty of chances to watch, and critique (lol).
+For example, Dad came with us to shop and purchase food. The act of us cooking and preparing meals for 2 weeks straight allowed him plenty of chances to watch, and even critique us (lol).
 
-Here is what
+During the time parents had lots of questions. We had talks about nutrition labels, and what was considered nutritious and what was not (mostly processed sugars). We explained the mechanism in which the body processed sugar and what leads to diabetes (Link). Cynthia is the expert on health and has a lot of knowledge. My role was to support the conversation and translate.
 
-During the time parents had lots of questions. We had talks about nutrition labels, and what was considered nutritious and what was not (processed sugars). We explained the mechanism in which the body processed sugar and what leads to diabetes (Link). Cynthia is the expert on health and has a lot of knowledge. My role was to support the convos and translate.
+Also **very important** and probably the biggest factor: The parents were easy to work with and were very positive. They had an open mind going into this whole thing which was crucial.
 
-Also **very important** and probably the biggest factor: The parents have been really easy to work with so far and have been very positive. They had an open mind going into this whole thing which was crucial.
-
-All in all it was a very positive experience for me and I'm confident we were able to build lasting habits/awareness on food!
+All in all it was a very positive experience and I'm confident we were able to build lasting habits/awareness on food!
