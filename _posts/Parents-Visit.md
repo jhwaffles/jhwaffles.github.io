@@ -62,7 +62,7 @@ Here are examples of my dad's "standard" food.
 | :---------------------------------------------------------------------: |
 | _Sausage McMuffin, Hash Brown, Green Bean Soup, Shrimp and Bean, Fruit_ |
 
-Most days a significant portion (>50%) of my dad's food was composed of carbohydrates from fruit, milk, and bread (bun).
+Most days a significant portion (>50%) of my dad's meals were composed of high-sugar food like noodles, breads, flour, and high-sugar fruits.
 
 ### Week 1 (June 18-June 25)
 
@@ -82,15 +82,11 @@ Week 1 started with a trip to costco together. The highlights included pan-fried
 
 The focus was to **shift away from carbohydrates-heavy foods and eat 80% protein and veggies.** Luckily a lot of the dishes and sides my parents liked were compatible for this food plan so it wasn't too hard to adjust the menu and cooking. For example Zha Jiang Mian (Black bean sauce noodle) is something they ate regularly and had the sauce for. We substituted the usual noodles with shirataki noodles (made from konjac yam, contains minimal digestible carbohydrates). My mom also has a stash of fake meat products (mostly soy protein) that we incorporated into the meals.
 
-| ![](/docs/assets/black_bean_sauce.jpg) |
-| :------------------------------------: |
-|           _Black Bean Sauce_           |
-
 An added challenge was my dad eats meat but my mom is vegan. So we prepared vegan and nonvegan versions of dishes. You can see a lot of side dishes (and variety) in the pictures.
 
-We also committed to go on a walk every evening. We talked about a range of topics from iphones + technology, diabetes and insulin pathways, Popeyes fried chicken, traveling, you name it.
+We also committed to go on a walk every evening after dinner. We talked about a range of topics from iphones + technology, diabetes and insulin pathways, Popeyes fried chicken, traveling, you name it.
 
-There were a moments of low energy (likely due to the adjustment period and low blood sugar), but my parents remained very upbeat. Dad lost 3 kg in the first week! GJ dad!
+There were a moments of low energy (likely due to the adjustment period and low blood sugar), but my parents remained very upbeat. **Dad lost 6.6 lbs (3 kg) in the first week!** GJ dad!
 
 ### Week 2 (June 25-July 02)
 
@@ -104,9 +100,9 @@ Week 2 had more variety - highlights were Sop Buntut (Indonesian soup with spare
 | :--------------------------------------: |
 |      _Curry Veggies, Eggs, Shrimp_       |
 
-|                ![](/docs/assets/zha_jiang_mien_eggs.jpg)                 |
-| :----------------------------------------------------------------------: |
-| _Zha Jiang Mien (Black Soybean Sauce Noodles), Fried Egg, Cabbage, Tofu_ |
+|                     ![](/docs/assets/zha_jiang_mien_eggs.jpg)                      |
+| :--------------------------------------------------------------------------------: |
+| _Zha Jiang Mien (Black Soybean Sauce Shirataki Noodles), Fried Egg, Cabbage, Tofu_ |
 
 | ![](/docs/assets/basil_mushrooms.jpg) |
 | :-----------------------------------: |
@@ -132,11 +128,13 @@ By week 3 the parents had the hang of things - Cynthia and I finished our stayov
 
 Every morning my dad would send a picture in our group chat showing off his weight displayed on the digital scale. It became the thing he was looking forward to the most each day because of the steady progress. I implemented a tracker on google sheets to log weight and exercise activity. With the aid of the bar chart, progress was easy to visualize.
 
+##Zoom in weight. may be makes lbs
+
 | ![](/docs/assets/weight_chart_zoom_in.png) |
 | :----------------------------------------: |
 |             _Weight over Time_             |
 
-After three weeks of commitment to the plan with home cooked meals mostly every day it was time to celebrate. It was a great bonding time, and **dad lost over 4 kg in 3 weeks.** Here we are eating out in San Jose:
+After three weeks of commitment to the plan with home cooked meals mostly every day it was time to celebrate. It was a great bonding time, and **dad lost over 8.8 lbs (4 kg) in 3 weeks.** Here we are eating out in San Jose:
 
 | ![](/docs/assets/eating_out_2.jpg) |
 | :--------------------------------: |
@@ -144,13 +142,13 @@ After three weeks of commitment to the plan with home cooked meals mostly every 
 
 ### Aftermath (August)
 
-Dad continued to provide updates on his weight. My parents took parts of the 3 week program and continued on with it. They continued to be mindful of their food and limit carbs and went on walks nearly every day. It was even more exciting to see my dad continue to lose weight.
+Dad continued to provide updates on his weight. My parents took parts of the 3 week program and continued on with it. For example, fruits were introduced but they continued to limit breads and grains, and went on walks nearly every day. My dad noticed stomach aches directly after drinking the morning shake, so we cut that out (We have a hunch it was due to stomach's ability to process the high fiber amounts). Overall, It was even more exciting to see my dad continue to lose weight as a continuation of the plan.
 
 | ![](/docs/assets/weight_chart_zoom_out.png) |
 | :-----------------------------------------: |
 |               _Weight Chart_                |
 
-Approximately a month after the program, my dad was <82 kg, over 7 kg lower than the start (2 months ago)!
+Approximately a month after the program, my dad was under 82 kg, equating to **15.4 lbs (7 kg) loss in 2 months!!**
 
 We also wanted to help my parents expand their exercise beyond walking. We decided to go to the park nearby to demonstrate some stretching and exercises (led by Cynthia).
 
@@ -162,7 +160,7 @@ We also wanted to help my parents expand their exercise beyond walking. We decid
 
 In retrospect this was a very successful visit and positive experience. Cynthia and I learned a great deal and got to spend quality time with my parents. My mom and dad built healthier habits, and continued to follow through even after the three week plan. On paper, the plan of limiting carbs and regular exercise was backed by science but what made it effective was getting the parents involved in process, the conversations during dinner and walks, and ultimately our presence and support.
 
-For example, Dad came with us to shop and purchase food. The act of us cooking and preparing meals for 2 weeks straight allowed him plenty of chances to watch, and even critique us (lol).
+For example, Dad came with us to shop and purchase food. The act of us cooking and preparing meals allowed him plenty of chances to watch, and even critique us (lol).
 
 During the time parents had lots of questions. We had talks about nutrition labels, and what was considered nutritious and what was not (mostly processed sugars). We explained the mechanism in which the body processed sugar and what leads to diabetes (Link). Cynthia is the expert on health and has a lot of knowledge. My role was to support the conversation and translate.
 
@@ -172,6 +170,8 @@ All in all it was a very positive experience and I'm confident we were able to b
 
 Some good resources:
 
-[Harvard School of Public Health](https://www.hsph.harvard.edu/nutritionsource/carbohydrates/carbohydrates-and-blood-sugar/)
-[The Carbohydrate-Insulin Model of Obesity](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6082688/)
-[The Diabetes Code](https://www.amazon.com/Diabetes-Code-Prevent-Reverse-Naturally/dp/1771642653)
+- [Harvard School of Public Health](https://www.hsph.harvard.edu/nutritionsource/carbohydrates/carbohydrates-and-blood-sugar/)
+
+- [The Carbohydrate-Insulin Model of Obesity](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6082688/)
+
+- [The Diabetes Code](https://www.amazon.com/Diabetes-Code-Prevent-Reverse-Naturally/dp/1771642653)
