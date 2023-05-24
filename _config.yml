@@ -1,7 +1,7 @@
 title: jhwaffles
 description: "Assorted Projects and Posts"
 
-url: ""
+url: "https://jhwaffles.github.io/"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
