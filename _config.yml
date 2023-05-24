@@ -1,41 +1,34 @@
-title: "jhwaffles blog"
-author: "Justin Huang"
-description: "Assorted Projects and Posts" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+title: jhwaffles
+description: "Assorted Projects and Posts"
 
-# Email / Social media user names used by the minima theme:
-# All of these are optional and can be removed or commented out
-email: "jwhuang88@gmail.com"
-github_username: "jhwaffles"
-linkedin_username: "justin-huang-6a10782b"
-#facebook_username: username
-#flickr_username: username
-#instagram_username: username
-#pinterest_username: username
-#youtube_username: username
-#googleplus_username: +username
+url: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 
-#########################################################################################
-######### Nothing below needs to be changed (unless you know what you're doing) #########
-#########################################################################################
-theme: "minima"
+# Header Option
+# header: large
 
-rss: rss
+sass:
+  style: compressed
 
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
 
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
+navigation:
+  - title: Home
+    url: /index.html
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
 
-titles_from_headings:
-  strip_title: true
-  collections: true
+social:
+  github: jhwaffles
+  email: jwhuang88@gmail.com
+  linkedin: justin-huang-6a10782b
+#google_analytics: "UA-58263416-1"
 
-defaults:
-  - scope:
-      path: ""
-      type: post
-    values:
-      tags: Other
+#disqus:
+#    shortname: brianmaierjr
