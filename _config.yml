@@ -21,8 +21,6 @@ navigation:
     url: /index.html
   - title: About
     url: /about
-  - title: Contact
-    url: /contact
 
 social:
   github: jhwaffles

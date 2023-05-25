@@ -5,11 +5,35 @@
     <description>Assorted Projects and Posts</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 May 2023 20:48:03 -0700</pubDate>
-    <lastBuildDate>Tue, 23 May 2023 20:48:03 -0700</lastBuildDate>
+    <pubDate>Wed, 24 May 2023 23:40:04 -0700</pubDate>
+    <lastBuildDate>Wed, 24 May 2023 23:40:04 -0700</lastBuildDate>
     <generator>Jekyll v4.3.2</generator><item>
+        <title>Berry Shake Recipe</title>
+        <description>&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/layer_juice.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Berry and Greens shake&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;4 tbsp almond butter&lt;/li&gt;
+  &lt;li&gt;4 tbsp cocoa powder&lt;/li&gt;
+  &lt;li&gt;4 tbsp chia seeds&lt;/li&gt;
+  &lt;li&gt;2 cups unsweetened almond milk (oat milk, coconut milk ok)&lt;/li&gt;
+  &lt;li&gt;2 cups water&lt;/li&gt;
+  &lt;li&gt;2 cups power greens blend (spinach, chard, kale). I roughly do 4 handfuls.&lt;/li&gt;
+  &lt;li&gt;2 cups frozen berries. I roughly do 4 handfuls.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I add the ingredients generally in sequence. Chia seeds should be soaked in water beforehand so they have time to expand/soften before blending. Makes roughly 4 servings.&lt;/p&gt;
+</description><description>&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/layer_juice.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Berry and Greens shake&lt;/figcaption&gt;
+&lt;/figure&gt;
+</description><pubDate>Tue, 07 Mar 2023 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/blog/Shake_Recipe/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Shake_Recipe/</guid></item><item>
         <title>Visiting Parents</title>
-        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;W&lt;/span&gt;eight Loss&lt;/p&gt;
+        <description>&lt;!-- &lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;W&lt;/span&gt;eight Loss&lt;/p&gt; --&gt;
 
 &lt;p&gt;My dad had many reasons for wanting to lose weight. He would always get comments from friends or visiting relatives, including my grandparents when they were around. Health was a big factor - his doctor said he needed to lose 20 lbs to be in better condition. Most of all, he wanted to look better in photos - Nothing makes him happier than when someone leave a positive comment in family photos. So in other words he wanted to shut down the haters, improve health, and look good. I should mention that my dad is retired.&lt;/p&gt;
 
@@ -55,59 +79,27 @@
 	&lt;figcaption&gt;Steamed Bun, Sausage, Soy Milk, Fruit&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/Jerry_Lunch_220613.jpeg#center&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Steamed Bun, Cereal, Fruit&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/Jerry_Lunch_220613.jpeg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Steamed Bun, Cereal, Fruit&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;h4 id=&quot;dinner-items&quot;&gt;Dinner items:&lt;/h4&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/Jerry_Dinner_220611.jpeg#center&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Beef Noodle Soup, Dried Beancurd with Pork&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/Jerry_Dinner_220611.jpeg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Beef Noodle Soup, Dried Beancurd with Pork&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/Jerry_Dinner_220613.jpeg#center&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Dumpling, Scallion Pancake, Dried Beancurd with Pork&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/Jerry_Dinner_220613.jpeg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Dumpling, Scallion Pancake, Dried Beancurd with Pork&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/Jerry_Dinner_220618.jpeg#center&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Sausage McMuffin, Hash Brown, Green Bean Soup, Shrimp and Bean, Fruit&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/Jerry_Dinner_220618.jpeg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Sausage McMuffin, Hash Brown, Green Bean Soup, Shrimp and Bean, Fruit&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Most days a significant portion (&amp;gt;50%) of my dad’s meals were composed of high-sugar food like noodles, breads, flour, and high-sugar fruits.&lt;/p&gt;
 
@@ -115,44 +107,20 @@
 
 &lt;p&gt;Week 1 started with a trip to costco together. The highlights included pan-fried cod with ginger and soy sauce, lettuce wraps with fixings, and lots of tofu. We also incorporated some foods they already had in the fridge. Here are some of the photos:&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/fish_bok_choy.jpg#center&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Pan Fried Cod with Soy Sauce and Ginger, Bok choy, Tofu, Broccoli&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/fish_bok_choy.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Pan Fried Cod with Soy Sauce and Ginger, Bok choy, Tofu, Broccoli&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/salad_and_shrimp.jpg&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Salad and Shrimp&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/salad_and_shrimp.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Salad and Shrimp&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/lettuce_wrap_with_fixings.jpg&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Lettuce Wrap and Fixings (Tofu, Sirloin Strips, Pickled Veggies, Leftovers)&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/lettuce_wrap_with_fixings.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Lettuce Wrap and Fixings (Tofu, Sirloin Strips, Pickled Veggies, Leftovers)&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;The focus was to &lt;strong&gt;shift away from carbohydrates-heavy foods and eat 80% protein and veggies.&lt;/strong&gt; Luckily a lot of the dishes and sides my parents liked were compatible for this food plan so it wasn’t too hard to adjust the menu and cooking. For example Zha Jiang Mian (Black bean sauce noodle) is something they ate regularly and had the sauce for. We substituted the usual noodles with shirataki noodles (made from konjac yam, contains minimal digestible carbohydrates). My mom also has a stash of fake meat products (mostly soy protein) that we incorporated into the meals.&lt;/p&gt;
 
@@ -166,87 +134,39 @@
 
 &lt;p&gt;Week 2 had more variety - highlights were Sop Buntut (Indonesian soup with spareribs and veggies), zha ziang mian using shirataki noodles, and vegetable curry. There were lots of sides as well.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/sop_buntut.jpg&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Sop Buntut (Indonesian Soup), Side Dishes&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/sop_buntut.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Sop Buntut (Indonesian Soup), Side Dishes&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/curry_veggies_eggs.jpg&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Curry Veggies, Eggs, Shrimp&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/curry_veggies_eggs.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Curry Veggies, Eggs, Shrimp&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/zha_jiang_mien_eggs.jpg&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Zha Jiang Mien (Black Soybean Sauce Shirataki Noodles), Fried Egg, Cabbage, Tofu&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/zha_jiang_mien_eggs.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Zha Jiang Mien (Black Soybean Sauce Shirataki Noodles), Fried Egg, Cabbage, Tofu&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/basil_mushrooms.jpg&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Basil Mushrooms&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/basil_mushrooms.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Basil Mushrooms&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;The parents were getting more into it and even contributed to making and preparing dishes. They were learning quickly about which foods were well-suited for this plan. We also demonstrated how to read a nutrition label and how to avoid picking things high in sugars/carbohydrates.&lt;/p&gt;
 
 &lt;p&gt;Dad was interested in learning how to make the morning shake so I gave a demonstration. Pretty soon he was off and making his own shakes!&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/layer_juice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Berry and Greens shake&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/layer_juice.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Berry and Greens shake&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/making_juice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Dad Preparing Shake&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/making_juice.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Dad Preparing Shake&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;By this time work was getting busy and the day-to-day included commuting to work one hour each way, cooking meals, going on a walk, then passing out. This period was exhausting but having Cynthia made it easier. It also helped that parents were learning and contributing. We realized the important thing was to continue building habits.&lt;/p&gt;
 
@@ -256,69 +176,37 @@
 
 &lt;p&gt;Every morning my dad would send a picture in our group chat showing off his weight displayed on the digital scale. It became the thing he was looking forward to the most each day because of the steady progress. I implemented a tracker on google sheets to log weight and exercise activity. With the aid of the bar chart, progress was easy to visualize.&lt;/p&gt;
 
-&lt;p&gt;##Zoom in weight. may be makes lbs&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/weight_chart_zoom_in.png&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Weight over Time&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/weight_chart_zoom_in.png&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Weight over Time&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;After three weeks of commitment to the plan with home cooked meals mostly every day it was time to celebrate. It was a great bonding time, and &lt;strong&gt;dad lost over 8.8 lbs (4 kg) in 3 weeks.&lt;/strong&gt; Here we are eating out in San Jose:&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/eating_out_2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Eating Out&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/eating_out_2.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Eating Out&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        |
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;aftermath-august&quot;&gt;Aftermath (August)&lt;/h3&gt;
 
 &lt;p&gt;Dad continued to provide updates on his weight. My parents took parts of the 3 week program and continued on with it. For example, fruits were introduced but they continued to limit breads and grains, and went on walks nearly every day. My dad noticed stomach aches directly after drinking the morning shake, so we cut that out (We have a hunch it was due to stomach’s ability to process the high fiber amounts). Overall, It was even more exciting to see my dad continue to lose weight as a continuation of the plan.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/weight_chart_zoom_out.png&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Weight Chart&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/weight_chart_zoom_out.png&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Weight Chart&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Approximately a month after the program, my dad was under 82 kg, equating to &lt;strong&gt;15.4 lbs (7 kg) loss in 2 months!!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;We also wanted to help my parents expand their exercise beyond walking. We decided to go to the park nearby to demonstrate some stretching and exercises (led by Cynthia).&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;/docs/assets/park_exercise.jpg&quot; alt=&quot;&quot; /&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;em&gt;Park Exercise&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/park_exercise.jpg&quot; alt=&quot;&quot; /&gt; 
+	&lt;figcaption&gt;Park Exercise&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;h3 id=&quot;takeaways&quot;&gt;Takeaways&lt;/h3&gt;
 
@@ -345,185 +233,8 @@
     &lt;p&gt;&lt;a href=&quot;https://www.amazon.com/Diabetes-Code-Prevent-Reverse-Naturally/dp/1771642653&quot;&gt;The Diabetes Code&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;W&lt;/span&gt;eight Loss&lt;/p&gt;
+</description><description>&lt;!-- &lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;W&lt;/span&gt;eight Loss&lt;/p&gt; --&gt;
 </description><pubDate>Tue, 07 Mar 2023 00:00:00 -0800</pubDate>
         <link>http://localhost:4000/blog/Parents-Visit/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/Parents-Visit/</guid></item><item>
-        <title>Example Test</title>
-        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;C&lt;/span&gt;urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
-
-&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
-
-&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;
-
-&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;/h3&gt;
-
-&lt;h4 id=&quot;heading-4&quot;&gt;Heading 4&lt;/h4&gt;
-
-&lt;h5 id=&quot;heading-5&quot;&gt;Heading 5&lt;/h5&gt;
-
-&lt;h6 id=&quot;heading-6&quot;&gt;Heading 6&lt;/h6&gt;
-
-&lt;blockquote&gt;Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.&lt;/blockquote&gt;
-
-&lt;p&gt;Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.&lt;/p&gt;
-
-&lt;h2 id=&quot;unordered-list&quot;&gt;Unordered List&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;List Item&lt;/li&gt;
-  &lt;li&gt;Longer List Item
-    &lt;ul&gt;
-      &lt;li&gt;Nested List Item&lt;/li&gt;
-      &lt;li&gt;Nested Item&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;List Item&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;ordered-list&quot;&gt;Ordered List&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;List Item&lt;/li&gt;
-  &lt;li&gt;Longer List Item
-    &lt;ol&gt;
-      &lt;li&gt;Nested OL Item&lt;/li&gt;
-      &lt;li&gt;Another Nested Item&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;List Item&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;definition-list&quot;&gt;Definition List&lt;/h2&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;Coffee&lt;/dt&gt;
-  &lt;dd&gt;Black hot drink&lt;/dd&gt;
-  &lt;dt&gt;Milk&lt;/dt&gt;
-  &lt;dd&gt;White cold drink&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.&lt;/p&gt;
-
-&lt;h2 id=&quot;table&quot;&gt;Table&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Syntax&lt;/th&gt;
-      &lt;th&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Header&lt;/td&gt;
-      &lt;td&gt;Title&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Paragraph&lt;/td&gt;
-      &lt;td&gt;Text&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Header&lt;/td&gt;
-      &lt;td&gt;Title&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Paragraph&lt;/td&gt;
-      &lt;td&gt;Text&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.&lt;/p&gt;
-
-&lt;p&gt;Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
-
-&lt;p&gt;Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.&lt;/p&gt;
-
-&lt;p&gt;Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
-</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;C&lt;/span&gt;urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
-</description><pubDate>Mon, 15 Dec 2014 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/example-post-formatting/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/example-post-formatting/</guid></item><item>
-        <title>Featured Image</title>
-        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;L&lt;/span&gt;orem ipsum thor smash liege-bastogne-liege landbouwkrediet ombregt krabbe, rouleur derby is for lovers bonk giro gilbert bidon. Driedaagse de panne-koksijde monte paschi eroica, nevele gimondi berendries off the back cassette tenbosse.&lt;/p&gt;
-
-&lt;p&gt;Bahamontes lanterne rouge normandie belgium. Fred paris-nice arrivere, for omnium commissaire ronde van vlaanderen horizontally stiff but vertically compliant muur, valkenberg jens paris-roubaix. Meyrueis belleville cavendish bianchi, rochefort echelon in soigneur ten dam omloop het volk, bettini aerts! Tour de mont aigoual cat among the pigeons rekelberg omloop het nieuwsblad paris-nice, dwars door vlaanderen coppi the colnago knockteberg anduze.&lt;/p&gt;
-
-&lt;p&gt;Kaperij lanterne rouge musette rund um koln bruges thor smash, geraardsbergen riis petacchi molteni pedaling squares. Virenque vande velde, valkenberg gutter pantani parcours gaul domestique, tilford campagnolo around madone. Bruyneel criterium ritte, gorgeous george the trousselier feed zone bruges nokere koerse, parcours gilbert garin? Anquetil valkenberg bettini cat among the pigeons.&lt;/p&gt;
-
-&lt;p&gt;Campagnolo the hors delai de wolf as the toto turns venga venga venga, sanchez nys. Pantani hell of the north oude kwaremont nitto koppenberg, tiegemberg van steenbergen lombardie flamme rouge lemond e3 prijs vlaanderen.&lt;/p&gt;
-
-&lt;p&gt;Planckaert berg ter stene freire gorgeous george in rouleur derby, vaughters fabianese omloop het volk rouleur play rouleur derby. Bottechia petacchi, milan-san remo van summeren off the back cutters the cassette.&lt;/p&gt;
-
-&lt;p&gt;Nyvelocity pyrenees vande velde merckx. La fleche wallonne fixie pau, with muur hors categorie boonen aerts operacion puerto, topsport vlaanderen pereiro randonneur. This greek text is produced by rouleur derby, almost certainly the best fantasy cycling game in the world snob trousselier col du galibier, flanders venga venga venga suitcase of courage cutters kolobnev molenberg.&lt;/p&gt;
-</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;L&lt;/span&gt;orem ipsum thor smash liege-bastogne-liege landbouwkrediet ombregt krabbe, rouleur derby is for lovers bonk giro gilbert bidon. Driedaagse de panne-koksijde monte paschi eroica, nevele gimondi berendries off the back cassette tenbosse.&lt;/p&gt;
-</description><pubDate>Sun, 14 Dec 2014 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/featured-image/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/featured-image/</guid></item><item>
-        <title>Post With A Code Snippet</title>
-        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;Y&lt;/span&gt;ou&apos;ll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes! To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
-
-</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;Y&lt;/span&gt;ou&apos;ll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes! To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
-</description><pubDate>Sat, 13 Dec 2014 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/code-snippet/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/code-snippet/</guid></item><item>
-        <title>Figure With A Caption</title>
-        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;L&lt;/span&gt;orem ipsum thor smash liege-bastogne-liege landbouwkrediet ombregt krabbe, rouleur derby is for lovers bonk giro gilbert bidon. Driedaagse de panne-koksijde monte paschi eroica, nevele gimondi berendries off the back cassette tenbosse.&lt;/p&gt;
-
-&lt;p&gt;Bahamontes lanterne rouge normandie belgium. Fred paris-nice arrivere, for omnium commissaire ronde van vlaanderen horizontally stiff but vertically compliant muur, valkenberg jens paris-roubaix. Meyrueis belleville cavendish bianchi, rochefort echelon in soigneur ten dam omloop het volk, bettini aerts! Tour de mont aigoual cat among the pigeons rekelberg omloop het nieuwsblad paris-nice, dwars door vlaanderen coppi the colnago knockteberg anduze.&lt;/p&gt;
-
-&lt;figure&gt;
-	&lt;img src=&quot;/assets/img/touring.jpg&quot; alt=&quot;&quot; /&gt; 
-	&lt;figcaption&gt;Fig1. - This is an example figcaption&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;figure&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/img/touring.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; 
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/span&gt;Fig1. - This is an example figcaption&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figure&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-&lt;p&gt;Kaperij lanterne rouge musette rund um koln bruges thor smash, geraardsbergen riis petacchi molteni pedaling squares. Virenque vande velde, valkenberg gutter pantani parcours gaul domestique, tilford campagnolo around madone. Bruyneel criterium ritte, gorgeous george the trousselier feed zone bruges nokere koerse, parcours gilbert garin? Anquetil valkenberg bettini cat among the pigeons.&lt;/p&gt;
-
-&lt;p&gt;Campagnolo the hors delai de wolf as the toto turns venga venga venga, sanchez nys. Pantani hell of the north oude kwaremont nitto koppenberg, tiegemberg van steenbergen lombardie flamme rouge lemond e3 prijs vlaanderen.&lt;/p&gt;
-
-&lt;p&gt;Planckaert berg ter stene freire gorgeous george in rouleur derby, vaughters fabianese omloop het volk rouleur play rouleur derby. Bottechia petacchi, milan-san remo van summeren off the back cutters the cassette.&lt;/p&gt;
-
-&lt;p&gt;Nyvelocity pyrenees vande velde merckx. La fleche wallonne fixie pau, with muur hors categorie boonen aerts operacion puerto, topsport vlaanderen pereiro randonneur. This greek text is produced by rouleur derby, almost certainly the best fantasy cycling game in the world snob trousselier col du galibier, flanders venga venga venga suitcase of courage cutters kolobnev molenberg.&lt;/p&gt;
-</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;L&lt;/span&gt;orem ipsum thor smash liege-bastogne-liege landbouwkrediet ombregt krabbe, rouleur derby is for lovers bonk giro gilbert bidon. Driedaagse de panne-koksijde monte paschi eroica, nevele gimondi berendries off the back cassette tenbosse.&lt;/p&gt;
-</description><pubDate>Fri, 12 Dec 2014 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/figure-with-caption/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/figure-with-caption/</guid></item><item>
-        <title>Image in Post</title>
-        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;L&lt;/span&gt;orem ipsum thor smash liege-bastogne-liege landbouwkrediet ombregt krabbe, rouleur derby is for lovers bonk giro gilbert bidon. Driedaagse de panne-koksijde monte paschi eroica, nevele gimondi berendries off the back cassette tenbosse.&lt;/p&gt;
-
-&lt;p&gt;Bahamontes lanterne rouge normandie belgium. Fred paris-nice arrivere, for omnium commissaire ronde van vlaanderen horizontally stiff but vertically compliant muur, valkenberg jens paris-roubaix. Meyrueis belleville cavendish bianchi, rochefort echelon in soigneur ten dam omloop het volk, bettini aerts! Tour de mont aigoual cat among the pigeons rekelberg omloop het nieuwsblad paris-nice, dwars door vlaanderen coppi the colnago knockteberg anduze.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/touring.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Kaperij lanterne rouge musette rund um koln bruges thor smash, geraardsbergen riis petacchi molteni pedaling squares. Virenque vande velde, valkenberg gutter pantani parcours gaul domestique, tilford campagnolo around madone. Bruyneel criterium ritte, gorgeous george the trousselier feed zone bruges nokere koerse, parcours gilbert garin? Anquetil valkenberg bettini cat among the pigeons.&lt;/p&gt;
-
-&lt;p&gt;Campagnolo the hors delai de wolf as the toto turns venga venga venga, sanchez nys. Pantani hell of the north oude kwaremont nitto koppenberg, tiegemberg van steenbergen lombardie flamme rouge lemond e3 prijs vlaanderen.&lt;/p&gt;
-
-&lt;p&gt;Planckaert berg ter stene freire gorgeous george in rouleur derby, vaughters fabianese omloop het volk rouleur play rouleur derby. Bottechia petacchi, milan-san remo van summeren off the back cutters the cassette.&lt;/p&gt;
-
-&lt;p&gt;Nyvelocity pyrenees vande velde merckx. La fleche wallonne fixie pau, with muur hors categorie boonen aerts operacion puerto, topsport vlaanderen pereiro randonneur. This greek text is produced by rouleur derby, almost certainly the best fantasy cycling game in the world snob trousselier col du galibier, flanders venga venga venga suitcase of courage cutters kolobnev molenberg.&lt;/p&gt;
-</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;L&lt;/span&gt;orem ipsum thor smash liege-bastogne-liege landbouwkrediet ombregt krabbe, rouleur derby is for lovers bonk giro gilbert bidon. Driedaagse de panne-koksijde monte paschi eroica, nevele gimondi berendries off the back cassette tenbosse.&lt;/p&gt;
-</description><pubDate>Thu, 11 Dec 2014 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/image-in-post/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/image-in-post/</guid></item><item>
-        <title>Blah</title>
-        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;L&lt;/span&gt;work work
-&lt;/p&gt;
-</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;L&lt;/span&gt;work work
-&lt;/p&gt;
-</description><pubDate>Wed, 10 Dec 2014 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/test-post/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/test-post/</guid></item></channel>
+        <guid isPermaLink="true">http://localhost:4000/blog/Parents-Visit/</guid></item></channel>
 </rss>

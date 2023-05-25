@@ -2,10 +2,10 @@
 layout: post
 title: "Visiting Parents"
 date: 2023-03-07
-description: Test Test
+description: Putting my parents on a meal plan. [Health][Lifestyle]
 ---
 
-<p class="intro"><span class="dropcap">W</span>eight Loss</p>
+<!-- <p class="intro"><span class="dropcap">W</span>eight Loss</p> -->
 
 My dad had many reasons for wanting to lose weight. He would always get comments from friends or visiting relatives, including my grandparents when they were around. Health was a big factor - his doctor said he needed to lose 20 lbs to be in better condition. Most of all, he wanted to look better in photos - Nothing makes him happier than when someone leave a positive comment in family photos. So in other words he wanted to shut down the haters, improve health, and look good. I should mention that my dad is retired.
 
@@ -49,23 +49,27 @@ Here are examples of my dad's "standard" food.
 	<figcaption>Steamed Bun, Sausage, Soy Milk, Fruit</figcaption>
 </figure>
 
-| ![](/docs/assets/Jerry_Lunch_220613.jpeg#center) |
-| :----------------------------------------------: |
-|           _Steamed Bun, Cereal, Fruit_           |
+<figure>
+	<img src="/assets/img/Jerry_Lunch_220613.jpeg" alt=""> 
+	<figcaption>Steamed Bun, Cereal, Fruit</figcaption>
+</figure>
 
 #### Dinner items:
 
-| ![](/docs/assets/Jerry_Dinner_220611.jpeg#center) |
-| :-----------------------------------------------: |
-|   _Beef Noodle Soup, Dried Beancurd with Pork_    |
+<figure>
+	<img src="/assets/img/Jerry_Dinner_220611.jpeg" alt=""> 
+	<figcaption>Beef Noodle Soup, Dried Beancurd with Pork</figcaption>
+</figure>
 
-|   ![](/docs/assets/Jerry_Dinner_220613.jpeg#center)    |
-| :----------------------------------------------------: |
-| _Dumpling, Scallion Pancake, Dried Beancurd with Pork_ |
+<figure>
+	<img src="/assets/img/Jerry_Dinner_220613.jpeg" alt=""> 
+	<figcaption>Dumpling, Scallion Pancake, Dried Beancurd with Pork</figcaption>
+</figure>
 
-|            ![](/docs/assets/Jerry_Dinner_220618.jpeg#center)            |
-| :---------------------------------------------------------------------: |
-| _Sausage McMuffin, Hash Brown, Green Bean Soup, Shrimp and Bean, Fruit_ |
+<figure>
+	<img src="/assets/img/Jerry_Dinner_220618.jpeg" alt=""> 
+	<figcaption>Sausage McMuffin, Hash Brown, Green Bean Soup, Shrimp and Bean, Fruit</figcaption>
+</figure>
 
 Most days a significant portion (>50%) of my dad's meals were composed of high-sugar food like noodles, breads, flour, and high-sugar fruits.
 
@@ -73,17 +77,20 @@ Most days a significant portion (>50%) of my dad's meals were composed of high-s
 
 Week 1 started with a trip to costco together. The highlights included pan-fried cod with ginger and soy sauce, lettuce wraps with fixings, and lots of tofu. We also incorporated some foods they already had in the fridge. Here are some of the photos:
 
-|             ![](/docs/assets/fish_bok_choy.jpg#center)              |
-| :-----------------------------------------------------------------: |
-| _Pan Fried Cod with Soy Sauce and Ginger, Bok choy, Tofu, Broccoli_ |
+<figure>
+	<img src="/assets/img/fish_bok_choy.jpg" alt=""> 
+	<figcaption>Pan Fried Cod with Soy Sauce and Ginger, Bok choy, Tofu, Broccoli</figcaption>
+</figure>
 
-| ![](/docs/assets/salad_and_shrimp.jpg) |
-| :------------------------------------: |
-|           _Salad and Shrimp_           |
+<figure>
+	<img src="/assets/img/salad_and_shrimp.jpg" alt=""> 
+	<figcaption>Salad and Shrimp</figcaption>
+</figure>
 
-|                ![](/docs/assets/lettuce_wrap_with_fixings.jpg)                |
-| :---------------------------------------------------------------------------: |
-| _Lettuce Wrap and Fixings (Tofu, Sirloin Strips, Pickled Veggies, Leftovers)_ |
+<figure>
+	<img src="/assets/img/lettuce_wrap_with_fixings.jpg" alt=""> 
+	<figcaption>Lettuce Wrap and Fixings (Tofu, Sirloin Strips, Pickled Veggies, Leftovers)</figcaption>
+</figure>
 
 The focus was to **shift away from carbohydrates-heavy foods and eat 80% protein and veggies.** Luckily a lot of the dishes and sides my parents liked were compatible for this food plan so it wasn't too hard to adjust the menu and cooking. For example Zha Jiang Mian (Black bean sauce noodle) is something they ate regularly and had the sauce for. We substituted the usual noodles with shirataki noodles (made from konjac yam, contains minimal digestible carbohydrates). My mom also has a stash of fake meat products (mostly soy protein) that we incorporated into the meals.
 
@@ -97,33 +104,39 @@ There were a moments of low energy (likely due to the adjustment period and low 
 
 Week 2 had more variety - highlights were Sop Buntut (Indonesian soup with spareribs and veggies), zha ziang mian using shirataki noodles, and vegetable curry. There were lots of sides as well.
 
-|      ![](/docs/assets/sop_buntut.jpg)       |
-| :-----------------------------------------: |
-| _Sop Buntut (Indonesian Soup), Side Dishes_ |
+<figure>
+	<img src="/assets/img/sop_buntut.jpg" alt=""> 
+	<figcaption>Sop Buntut (Indonesian Soup), Side Dishes</figcaption>
+</figure>
 
-| ![](/docs/assets/curry_veggies_eggs.jpg) |
-| :--------------------------------------: |
-|      _Curry Veggies, Eggs, Shrimp_       |
+<figure>
+	<img src="/assets/img/curry_veggies_eggs.jpg" alt=""> 
+	<figcaption>Curry Veggies, Eggs, Shrimp</figcaption>
+</figure>
 
-|                     ![](/docs/assets/zha_jiang_mien_eggs.jpg)                      |
-| :--------------------------------------------------------------------------------: |
-| _Zha Jiang Mien (Black Soybean Sauce Shirataki Noodles), Fried Egg, Cabbage, Tofu_ |
+<figure>
+	<img src="/assets/img/zha_jiang_mien_eggs.jpg" alt=""> 
+	<figcaption>Zha Jiang Mien (Black Soybean Sauce Shirataki Noodles), Fried Egg, Cabbage, Tofu</figcaption>
+</figure>
 
-| ![](/docs/assets/basil_mushrooms.jpg) |
-| :-----------------------------------: |
-|           _Basil Mushrooms_           |
+<figure>
+	<img src="/assets/img/basil_mushrooms.jpg" alt=""> 
+	<figcaption>Basil Mushrooms</figcaption>
+</figure>
 
 The parents were getting more into it and even contributed to making and preparing dishes. They were learning quickly about which foods were well-suited for this plan. We also demonstrated how to read a nutrition label and how to avoid picking things high in sugars/carbohydrates.
 
 Dad was interested in learning how to make the morning shake so I gave a demonstration. Pretty soon he was off and making his own shakes!
 
-| ![](/docs/assets/layer_juice.jpg) |
-| :-------------------------------: |
-|     _Berry and Greens shake_      |
+<figure>
+	<img src="/assets/img/layer_juice.jpg" alt=""> 
+	<figcaption>Berry and Greens shake</figcaption>
+</figure>
 
-| ![](/docs/assets/making_juice.jpg) |
-| :--------------------------------: |
-|       _Dad Preparing Shake_        |
+<figure>
+	<img src="/assets/img/making_juice.jpg" alt=""> 
+	<figcaption>Dad Preparing Shake</figcaption>
+</figure>
 
 By this time work was getting busy and the day-to-day included commuting to work one hour each way, cooking meals, going on a walk, then passing out. This period was exhausting but having Cynthia made it easier. It also helped that parents were learning and contributing. We realized the important thing was to continue building habits.
 
@@ -133,33 +146,35 @@ By week 3 the parents had the hang of things - Cynthia and I finished our stayov
 
 Every morning my dad would send a picture in our group chat showing off his weight displayed on the digital scale. It became the thing he was looking forward to the most each day because of the steady progress. I implemented a tracker on google sheets to log weight and exercise activity. With the aid of the bar chart, progress was easy to visualize.
 
-##Zoom in weight. may be makes lbs
-
-| ![](/docs/assets/weight_chart_zoom_in.png) |
-| :----------------------------------------: |
-|             _Weight over Time_             |
+<figure>
+	<img src="/assets/img/weight_chart_zoom_in.png" alt=""> 
+	<figcaption>Weight over Time</figcaption>
+</figure>
 
 After three weeks of commitment to the plan with home cooked meals mostly every day it was time to celebrate. It was a great bonding time, and **dad lost over 8.8 lbs (4 kg) in 3 weeks.** Here we are eating out in San Jose:
 
-| ![](/docs/assets/eating_out_2.jpg) |
-| :--------------------------------: |
-|            _Eating Out_            |
+<figure>
+	<img src="/assets/img/eating_out_2.jpg" alt=""> 
+	<figcaption>Eating Out</figcaption>
+</figure>            |
 
 ### Aftermath (August)
 
 Dad continued to provide updates on his weight. My parents took parts of the 3 week program and continued on with it. For example, fruits were introduced but they continued to limit breads and grains, and went on walks nearly every day. My dad noticed stomach aches directly after drinking the morning shake, so we cut that out (We have a hunch it was due to stomach's ability to process the high fiber amounts). Overall, It was even more exciting to see my dad continue to lose weight as a continuation of the plan.
 
-| ![](/docs/assets/weight_chart_zoom_out.png) |
-| :-----------------------------------------: |
-|               _Weight Chart_                |
+<figure>
+	<img src="/assets/img/weight_chart_zoom_out.png" alt=""> 
+	<figcaption>Weight Chart</figcaption>
+</figure>
 
 Approximately a month after the program, my dad was under 82 kg, equating to **15.4 lbs (7 kg) loss in 2 months!!**
 
 We also wanted to help my parents expand their exercise beyond walking. We decided to go to the park nearby to demonstrate some stretching and exercises (led by Cynthia).
 
-| ![](/docs/assets/park_exercise.jpg) |
-| :---------------------------------: |
-|           _Park Exercise_           |
+<figure>
+	<img src="/assets/img/park_exercise.jpg" alt=""> 
+	<figcaption>Park Exercise</figcaption>
+</figure>
 
 ### Takeaways
 
