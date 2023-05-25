@@ -25,7 +25,7 @@ Some more specific guidelines:
 - No dairy
 - Limit fruits (Berries ok)
 - Limit processed foods
-- Berry/greens/fiber shake in the morning.
+- Berry/greens/fiber [shake](/blog/Shake_Recipe) in the morning.
 - Soy and Tofu is OK
 - Beef, seafood, are OK
 - No vegetable oils
@@ -126,7 +126,7 @@ Week 2 had more variety - highlights were Sop Buntut (Indonesian soup with spare
 
 The parents were getting more into it and even contributed to making and preparing dishes. They were learning quickly about which foods were well-suited for this plan. We also demonstrated how to read a nutrition label and how to avoid picking things high in sugars/carbohydrates.
 
-Dad was interested in learning how to make the morning shake so I gave a demonstration. Pretty soon he was off and making his own shakes!
+Dad was interested in learning how to make the morning [shake](/blog/Shake_Recipe) so I gave a demonstration. Pretty soon he was off and making his own shakes!
 
 <figure>
 	<img src="/assets/img/layer_juice.jpg" alt=""> 
