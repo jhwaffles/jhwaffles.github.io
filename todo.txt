@@ -1,0 +1,16 @@
+Fix contact info. DONE
+Get rid of avatar photos. DONE
+
+Move icons below contact info. DONE
+Skills section? DONE
+
+Projects
+Have button for streamlit, shiny links DONE
+Separate out skills and Description DONE
+Remove popout and make the photos not gray. DONE
+
+Flavorspace - good as is.
+Build the repository for sleep/symptom tracker. Write the 'blog page'.
+Build the repository for CGM. Show postprandial peak analysis. Write the 'blog page'.
+4th project. Random Number Genaraor? Raman Spectroscopy
+Need something more LLM pipeline focused.
