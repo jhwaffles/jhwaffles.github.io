@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluating Randomness</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+  
+</head>
+<body class="page ">
+  <main>
+    <h1 id="evaluating-randomness">Evaluating Randomness</h1>
+
+<p>How do we know if a random number generator (RNG) is ‘good’? In this project we test a number of Unif(0,1) generators. We evaluate these RNG with formal statistical tests as well as visual checks. The RNGs we will explore include:</p>
+
+<ul>
+  <li>Numpy BitGenerator (PCG64)</li>
+  <li>RANDU</li>
+  <li>Middle Squares</li>
+  <li>Other (Atmospheric Noise)</li>
+</ul>
+
+<h2 id="background---random-number-generators">Background - Random Number Generators</h2>
+
+<h3 id="numpy-bitgenerator-pcg64">Numpy BitGenerator (PCG64)</h3>
+
+<p>This is the default RNG used in Python’s numpy module. It is a PCG, which is short for permuted congruential generator. Developed in 2014 by Dr. M.E. O’Neill, it uses linear congruential generator as well as a permutation function to ‘shuffle’ and improve statistical properties. Why is it used in numpy? It is fast, less predictable (and more secure), and easy to use!</p>
+
+<h3 id="randu">Randu</h3>
+
+<p>Randu is a linear congruential pseudorandom number generator of the Park–Miller type, and was developed in the 1960s. As mentioned in the course, drawbacks of the generator include correlation between points. In fact, each point lies in one of a set of 15 parallel planes \(2^{31}\) apart.</p>
+
+\[V_{j+1} = 65539\cdot V_j\, \bmod\, 2^{31}\]
+
+\[X_j = \frac{V_{j}}{2^{31}}\]
+
+<h3 id="middle-squares">Middle Squares</h3>
+
+<p>The midsquares method was developed by Von Neumann in 1949. It is an arithmetic method that takes a seed number and generates the next number by taking the middle n digits of the seed number, and squaring it. In this example, we use n=4:</p>
+
+\[X_0 = 6100, X_0^2 = 37 \mathbf{2100} 00\]
+
+\[X_1 = 2100, X_1^2 = 04 \mathbf{4100} 00\]
+
+\[R_{i}=\frac{X_{i}}{1000}\]
+
+<h3 id="atmospheric-noiseother">Atmospheric Noise/Other</h3>
+
+<p>Random numbers can come from all kinds of sources! Some have described using a lava lamp, using physical phenomena to generate numbers. Another source is from ‘atmospheric noise’, compiled from random.org.</p>
+
+<h2 id="background---statistical-tests">Background - Statistical Tests</h2>
+
+<p>The statistical tests we will use are:</p>
+
+<ul>
+  <li>Chi Squared for goodness of fit (Uniforms)</li>
+  <li>Means run test for independence</li>
+  <li>Autocorrelation test for independence</li>
+</ul>
+
+<h3 id="chi-squared-goodness-of-fit-test">Chi-Squared Goodness of Fit Test</h3>
+
+<p>This basically compares if an observed data set aligns with an expected distribution (uniform in this case). Here we start with a hypothesis that the numbers are uniform. The test statistic is \(\chi_{0}^2\) which is calculated by dividing the numbers into n bins and counting how many numbers fall into the individual bins and comparing these to the expected amount in each bin. The probability associated with a \(\chi_{0}^2\) can be found in reference table with associated significance and degree of freedom inputs. From this we can determine if there is evidence that supports that the numbers are uniform.</p>
+
+\[H_0: R_{1},R_{2}...R_{n} \text{  Unif(0,1)}\]
+
+\[\chi_{0}^{2} = \sum_{i=1}^{k}\frac{(O_{i}-E_{i})^2}{E_{i}}\]
+
+\[\text{If  }\chi_{0}^{2}&gt;\chi_{a,k-1}^{2} \text{  we reject  } H_0\]
+
+\[\text{If  }\chi_{0}^{2}&lt;=\chi_{a,k-1}^{2} \text{  we fail to reject  } H_0\]
+
+<h3 id="runs-test-means">Runs Test Means</h3>
+
+<p>This test compares the number of runs against the number expected in independent series. Here, a run is single or consecutive values above the mean or below the mean before switching. For example if values above the mean are ‘+’ and values below the means are ‘-‘, then a sequence of ‘-++–+++’ would be broken down to ‘-‘,’++’,’–’,’+++’ (4 runs). We begin with a hypothesis that the sequence of numbers are independent. The test statistic is \(Z_0\) which is calculated in the equations below. The probability associated with \(Z_0\) is determined by the significance level and the normal distribution. From this we can determine if there is evidence that supports that the numbers are independent.</p>
+
+\[H_0: R_{1},R_{2}...R_{n} \text{  are independent.}\]
+
+\[E[B]=\frac{2*n1n2}{2} + 0.5\]
+
+\[Var[B]=\frac{2*n1n2(2*n1n2-n}{n^{2}(n-1)}\]
+
+\[Z_0=\frac{B-E[B]}{\sqrt{Var(B)}}\]
+
+\[\text{If  }|Z_0|&gt;z_{a/2} \text{  we reject  } H_0\]
+
+\[\text{If  }|Z_0|&lt;=z_{a/2} \text{  we fail to reject  } H_0\]
+
+<h3 id="autocorrelation">Autocorrelation</h3>
+
+<p>This test provides another way to determine <strong>independence</strong> by looking at correlation between consecutive numbers. Essentially it tests a sequence for correlation by comparing values against previous values (usually a determined lag) in the series.</p>
+
+\[H_0: R_{1},R_{2}...R_{n} \text{ are independent}\]
+
+\[\rho=(\frac{12}{n-1}\sum_{k=1}^{n-1}R_{k}R_{1+k})-3\]
+
+\[Z_0=\frac{\rho}{\sqrt{Var(\rho)}}\]
+
+\[\text{If  }|Z_0|&gt;z_{a/2} \text{ we reject  } H_0\]
+
+\[\text{If  }|Z_0|&lt;=z_{a/2} \text{ we fail to reject  } H_0\]
+
+<h2 id="results">Results</h2>
+
+<p>10000 Pseudo Random numbers (PRNs) were generated from each generator and run through the statistical tests. Significance level of a=0.05 was used for all relevant tests. A summary table of results can be seen below (<strong>bold</strong> means values were past threshold and null hypothesis is <strong>rejected</strong>.)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Statistic</th>
+      <th>PCG64</th>
+      <th>RANDU</th>
+      <th>Mid Squares</th>
+      <th>Atmospheric</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chi Squared</td>
+      <td>\(X_0^2\)</td>
+      <td>7.124</td>
+      <td>4.376</td>
+      <td><strong>14855.42</strong></td>
+      <td>8.294</td>
+    </tr>
+    <tr>
+      <td>Means Run</td>
+      <td>\(Z_0\)</td>
+      <td><strong>2.291</strong></td>
+      <td>1.19</td>
+      <td>0.21</td>
+      <td>0.594</td>
+    </tr>
+    <tr>
+      <td>Autocorrelation</td>
+      <td>\(Z_0\)</td>
+      <td>-0.824</td>
+      <td>-0.614</td>
+      <td><strong>3.364</strong></td>
+      <td>0.528</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Unsurprisingly the mid squares generator did not pass the chi squared test for uniform fit, nor the autocorrelation test. Surprisingly the PCG generator from numpy did not pass the means run test for uniform fit. It also seems the PCG generator did worse on the chi squared test as the number of PRNs went up. Surprisingly, no tests were rejected for RANDU, which is infamous for NOT being a good generator.</p>
+
+<h3 id="how-about-a-visual-check">How about a visual check?</h3>
+
+<p>Bitmaps were generated for each generator. The 10000 random numbers were fit to a 100x100 grid, and mapped to black or white pixels depending on the PRN values.</p>
+
+<div class="image-grid">
+  <figure>
+    <img src="/images/PCG64bitmap.png" alt="PCG64 bitmap" width="250" />
+    <figcaption>PCG64 bitmap</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/RANDUbitmap.png" alt="RANDU bitmap" width="250" />
+    <figcaption>RANDU bitmap</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/MidSquaresbitmap.png" alt="MidSquares bitmap" width="250" />
+    <figcaption>MidSquares bitmap</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/atmosphericbitmap.png" alt="Atmospheric bitmap" width="250" />
+    <figcaption>Atmospheric bitmap</figcaption>
+  </figure>
+</div>
+
+<p>From this it is very apparent that the mid squares is a ‘bad’ generator. The numbers don’t seem random at all! RANDU is infamous for forming hyperplanes in 3D plot. It didnt seem like those characteristics were captured in the 2D bitmaps.</p>
+
+<p>It is apparent that there is no one size fits all test to determine if a random number generator (RNG) is ‘good’ or ‘bad’. The most rigorous approach would be to run a battery of statistical tests on each generator. This is just a sample of some of the tests available - other relevant tests include a permutations test, reverse arrangements test, and ranking tests. In addition to statistical tests, visualization of the data can be a powerful tool to determine the quality of a RNG.</p>
+
+  </main>
+</body>
+</html>

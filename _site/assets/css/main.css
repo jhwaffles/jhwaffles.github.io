@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400,600,700,900");
 
 /*
 	Strata by HTML5 UP
@@ -195,9 +195,11 @@ select,
 textarea {
 	color: #a2a2a2;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	font-size: 16pt;
-	font-weight: 400;
+	font-size: 20pt;
+	font-weight: 500;
 	line-height: 1.75em;
+	/* margin: 12em 8em 8em 12em;
+	padding: 0.5em 0 0.5em 1.5em; */
 }
 
 a {
@@ -218,8 +220,8 @@ a:hover {
 
 strong,
 b {
-	color: #787878;
-	font-weight: 400;
+	color: #030303;
+	font-weight: 800;
 }
 
 em,
@@ -2153,20 +2155,8 @@ input[type="radio"]+label:before {
 }
 
 .image:before {
-	-moz-transition: opacity 0.2s ease-in-out;
-	-webkit-transition: opacity 0.2s ease-in-out;
-	-ms-transition: opacity 0.2s ease-in-out;
-	transition: opacity 0.2s ease-in-out;
-	background: url("images/overlay.png");
-	border-radius: 0.35em;
-	content: '';
-	display: block;
-	height: 100%;
-	left: 0;
-	opacity: 0.5;
-	position: absolute;
-	top: 0;
-	width: 100%;
+	background: none !important;
+	opacity: 0 !important;
 }
 
 .image.thumb {
@@ -2174,27 +2164,7 @@ input[type="radio"]+label:before {
 }
 
 .image.thumb:after {
-	-moz-transition: opacity 0.2s ease-in-out;
-	-webkit-transition: opacity 0.2s ease-in-out;
-	-ms-transition: opacity 0.2s ease-in-out;
-	transition: opacity 0.2s ease-in-out;
-	border-radius: 0.35em;
-	border: solid 3px rgba(255, 255, 255, 0.5);
-	color: #fff;
-	content: 'View';
-	display: inline-block;
-	font-size: 0.8em;
-	font-weight: 400;
-	left: 50%;
-	line-height: 2.25em;
-	margin: -1.25em 0 0 -3em;
-	opacity: 0;
-	padding: 0 1.5em;
-	position: absolute;
-	text-align: center;
-	text-decoration: none;
-	top: 50%;
-	white-space: nowrap;
+	display: none !important;
 }
 
 .image.thumb:hover:after {
@@ -2296,6 +2266,26 @@ ul.alt li:first-child {
 dl {
 	margin: 0 0 2em 0;
 }
+
+/* Alt overrides */
+dl.alt {
+	display: grid;
+	grid-template-columns: 120px 1fr;
+	/* first column fixed, second flexible */
+	row-gap: 0.85em;
+}
+
+dl.alt dt {
+	grid-column: 1;
+	font-weight: bold;
+}
+
+dl.alt dd {
+	grid-column: 2;
+	margin: 0;
+	/* reset margins */
+}
+
 
 /* Icons */
 
@@ -2666,6 +2656,8 @@ input[type="button"]:disabled,
 
 .work-item {
 	margin: 0 0 2em 0;
+	text-align: center;
+	/* centers everything inside */
 }
 
 .work-item .image {
@@ -2673,18 +2665,35 @@ input[type="button"]:disabled,
 }
 
 .work-item h3 {
-	font-size: 1em;
+	font-size: 1.3em;
 	margin: 0 0 0.5em 0;
 }
 
 .work-item p {
-	font-size: 0.8em;
-	line-height: 1.5em;
-	margin: 0;
+	margin: 0 0 1em 0;
+	/* spacing between paragraphs */
 }
+
+.work-item .skills {
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+.work-item .description {
+	margin-bottom: 1.5em;
+	/* extra spacing before button */
+}
+
+.work-item .actions {
+	display: inline-block;
+	/* keeps button centered under text */
+	margin-top: 1em;
+}
+
 
 /* Header */
 
+/* Header Sidebar */
 #header {
 	display: -moz-flex;
 	display: -webkit-flex;
@@ -2694,29 +2703,55 @@ input[type="button"]:disabled,
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	-moz-align-items: -moz-flex-end;
-	-webkit-align-items: -webkit-flex-end;
-	-ms-align-items: -ms-flex-end;
-	align-items: flex-end;
 	-moz-justify-content: space-between;
 	-webkit-justify-content: space-between;
 	-ms-justify-content: space-between;
 	justify-content: space-between;
-	background-color: #1f1815;
-	background-attachment: scroll, scroll;
-	background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-	background-position: top left, top left;
-	background-repeat: repeat, no-repeat;
-	background-size: auto, 150%;
-	color: rgba(255, 255, 255, 0.5);
+	background: #222629 url("images/overlay.png");
+	box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
+	color: #fff;
 	height: 100%;
 	left: 0;
-	padding: 8em 4em;
+	overflow-y: auto;
 	position: fixed;
 	text-align: right;
 	top: 0;
-	width: 35%;
+	width: 375px;
+	padding: 4em 2em;
+	/* optional padding */
 }
+
+#header .image.avatar {
+	margin: 0 0 1em 0;
+	width: 6.25em;
+}
+
+
+#header .top {
+	-moz-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+}
+
+#header .bottom {
+	-moz-flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-shrink: 0;
+	flex-shrink: 0;
+	padding: 1.5em 0 0.75em 0;
+}
+
+#header .bottom> :last-child {
+	margin-bottom: 0;
+}
+
+/* Adjust main content so it doesn't overlap sidebar */
+#main {
+	margin-left: 375px;
+	/* same as sidebar width */
+}
+
 
 #header>* {
 	-moz-flex-shrink: 0;
@@ -2754,9 +2789,11 @@ input[type="button"]:disabled,
 	margin: 0;
 }
 
-#header .image.avatar {
-	margin: 0 0 1em 0;
-	width: 6.25em;
+
+#header #nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 /* Footer */
@@ -2814,6 +2851,25 @@ input[type="button"]:disabled,
 	border-top: 0;
 	margin-top: 0;
 	padding-top: 0;
+}
+
+.skills-grid {
+	display: flex;
+	justify-content: space-between;
+	gap: 2em;
+	/* space between columns */
+}
+
+.skill-card {
+	flex: 1;
+	/* each takes equal width */
+	text-align: center;
+	/* optional */
+}
+
+.skill-card p {
+	margin-top: 0.5em;
+	line-height: 1.6;
 }
 
 /* Poptrox */
@@ -3343,4 +3399,55 @@ body.is-touch .poptrox-popup .closer {
 		padding-left: 0;
 	}
 
+}
+
+/* Blog post overrides */
+body.page {
+	color: #333;
+	/* darker text for readability */
+	font-family: Georgia, serif;
+	font-size: 16pt;
+	line-height: 1.9em;
+}
+
+body.page main {
+	max-width: 40em;
+	margin: 12em 8em 8em 12em;
+}
+
+body.page h1,
+body.page h2,
+body.page h3 {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	/* keep headings sans */
+	margin-top: 1.5em;
+}
+
+.med-img {
+	max-width: 800px;
+	height: auto;
+	display: block;
+	margin: 1em auto;
+	/* optional: centers image */
+}
+
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* 2 columns */
+	gap: 2em;
+	/* spacing between items */
+	justify-items: center;
+	/* center figures horizontally */
+	margin: 2em 0;
+}
+
+.image-grid figure {
+	text-align: center;
+}
+
+.image-grid figcaption {
+	font-size: 0.9em;
+	color: #666;
+	margin-top: 0.5em;
 }

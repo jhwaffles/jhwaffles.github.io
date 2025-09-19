@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400,600,700,900");
 
 /*
 	Strata by HTML5 UP
@@ -195,9 +195,11 @@ select,
 textarea {
 	color: #a2a2a2;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	font-size: 16pt;
-	font-weight: 400;
+	font-size: 20pt;
+	font-weight: 500;
 	line-height: 1.75em;
+	/* margin: 12em 8em 8em 12em;
+	padding: 0.5em 0 0.5em 1.5em; */
 }
 
 a {
@@ -218,8 +220,8 @@ a:hover {
 
 strong,
 b {
-	color: #787878;
-	font-weight: 400;
+	color: #030303;
+	font-weight: 800;
 }
 
 em,
@@ -3397,4 +3399,55 @@ body.is-touch .poptrox-popup .closer {
 		padding-left: 0;
 	}
 
+}
+
+/* Blog post overrides */
+body.page {
+	color: #333;
+	/* darker text for readability */
+	font-family: Georgia, serif;
+	font-size: 16pt;
+	line-height: 1.9em;
+}
+
+body.page main {
+	max-width: 40em;
+	margin: 12em 8em 8em 12em;
+}
+
+body.page h1,
+body.page h2,
+body.page h3 {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	/* keep headings sans */
+	margin-top: 1.5em;
+}
+
+.med-img {
+	max-width: 800px;
+	height: auto;
+	display: block;
+	margin: 1em auto;
+	/* optional: centers image */
+}
+
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* 2 columns */
+	gap: 2em;
+	/* spacing between items */
+	justify-items: center;
+	/* center figures horizontally */
+	margin: 2em 0;
+}
+
+.image-grid figure {
+	text-align: center;
+}
+
+.image-grid figcaption {
+	font-size: 0.9em;
+	color: #666;
+	margin-top: 0.5em;
 }
