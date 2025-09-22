@@ -9,8 +9,18 @@ Have button for streamlit, shiny links DONE
 Separate out skills and Description DONE
 Remove popout and make the photos not gray. DONE
 
-Flavorspace - good as is.
-Build the repository for sleep/symptom tracker. Write the 'blog page'.
-Build the repository for CGM. Show postprandial peak analysis. Write the 'blog page'.
-4th project. Random Number Genaraor? Raman Spectroscopy
+1. Flavorspace - good as is.
+
+2. CGM
+Fix some of the margins for main 
+CGM double check repository.
+CGM add some more code snippets.
+Later: use sklearn for linear models.
+
+3. sleep the repository for sleep/symptom tracker. Write the 'blog page'. 
+
+4th project. Random Number Generator. 
+Add own random number generator later.
+
+
 Need something more LLM pipeline focused.
