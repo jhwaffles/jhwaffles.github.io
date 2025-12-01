@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Batch Evolution</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+  
+</head>
+<body class="page ">
+  <main>
+    <h1 id="batch-evolution-modeling-determining-whats-a-good-batch">Batch Evolution Modeling: Determining what’s a good batch.</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>In this post, I go over applications of batch evolution modeling for process monitoring. What is batch evolution modeling? It’s a framework of methods that allow us to track processes holistically, and evaluate batches in progress. It incorporates concepts from data science/machine learning as well as statistical process control to solve problems. Although the context is in biomanufacturing and bioprocess engineering, the concepts can be applied to other fields (anomaly detection, manufacturing, any type of process monitoring.)</p>
+
+<p>Let’s say we have an established process that we are running periodically. With enough runs, we’ve established how runs are supposed to trend. How do evaluate whats ‘normal’ for the process? How do we tell if a batch in-progress is behaving ‘normally’? If there is a deviation, do we have enough evidence to determine whether we ‘scrap’ the batch, saving time and costs? We can answer all of these with batch evolution modeling! Existing software (SIMCA) lets you do this, but I will show that it’s possible to do it in Python!</p>
+
+<p>Data and code as well as reference literatures can be found on Github.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>We work with a synthetic dataset of 17 runs, based off real world bioprocesses where we are making some kind of product, such as antibody, in a bioreactor. Along the way, samples are taken and measured for the product (titer, mg/mL), as well as metabolites (acetate, glucose, ammonia, phosphate, pyruvate).</p>
+
+<p>Data in bioprocesses are generally very high dimensional. In this example, we monitor 5 metbolites, but there can be many more measurements through sensor data such as dO%, pH.
+[image]</p>
+
+<p>The first step is to do exploratory data analysis.</p>
+
+<p>[image]</p>
+
+<p>While its important to view the trends, we can use batch evolution modeling is useful for looking at holistically. In these types of scenarios, we are workign with high dimensinoal data (Lots of features vs observations), where features are heavily correlated with each other. Batch evolution modeling allows us to compress the data so we can easily track the most important components by utilizing Partial Least Squares (PLS). Furthermore it is interpretable in that we can pull out the most important contributors to a ‘bad’ or ‘deviated’ batch. How is this done?</p>
+
+<h2 id="step-1---data-cleaning-and-build-pls-model-on-good-batches">Step 1 - Data cleaning and Build PLS Model on ‘good’ batches</h2>
+
+<p>Data must be prepared. We gather all historical ‘good’ batches.</p>
+
+<p>Get data into matrix in the form of</p>
+
+<p>Center and scale. This is important because __.</p>
+
+<p>[code]</p>
+
+<p>Define Y. It’s a measure of a process maturity. in this instance its time.</p>
+
+<p>Build PLS Model.</p>
+
+<p>Get Scores.</p>
+
+<p>[DataFrame]</p>
+
+<h3 id="what-is-pls">What is PLS?</h3>
+
+<p>USed in chemometrics, and similar industries.
+Like PCA, it uses principal components<br />
+Where scores and loadings are determined. Loadings are the principal compeonets, or vectors, that maximize the variance in the data set. Scores are the coefficient. These two can be used to get a reconstructed X.
+Unlike PCA, it is predicting on y.
+To determine the number of components to use, we can use an elbow plot.</p>
+
+<h2 id="step-2---plot">Step 2 - Plot</h2>
+
+<p>Rearrange the matrix. To
+Calculate metrics.
+[dataframe]</p>
+
+<p>Plots.</p>
+
+<h2 id="step-3---entering-new-data">Step 3 - Entering new data.</h2>
+
+<p>Predict titer. DmodX, T2. out of scope for this post.</p>
+
+<p>Monitor incoming batches, determine if things are deviating!</p>
+
+<h3 id="key-challenges-encountered">Key Challenges encountered:</h3>
+
+<h3 id="what-happens-if-time-points-dont-line-up-it-can-be-done-due-the-nature-of-solvin-for-y-time-first-not-shown-here-explicitly">What happens if time points dont line up? It can be done due the nature of solvin for y time first (Not shown here explicitly)</h3>
+
+<h3 id="prediction-with-incomplete-batches-early-predictions-yes">prediction with incomplete batches? Early predictions? yes!</h3>
+
+<h3 id="why-is-there-3-sd-chosen-as-intervals">Why is there 3 SD chosen as intervals?</h3>
+
+<h3 id="when-is-this-not-good">When is this NOT good?</h3>
+
+<p>x</p>
+
+<h2 id="ending-thoughts-what-did-we-accomplish">Ending Thoughts (What did we accomplish)?</h2>
+
+<p>We learned how to use multivariate analysis to monitor batches in summarized way (latent variables). Good for high dimensional data!
+We learned how to use build a model based off a training set, then apply new batches to evaluate their health.
+We did using Python, sklearn, numpy, open source tools.</p>
+
+<p>You can how see how useful this is for something with aLOT of signals.</p>
+
+  </main>
+</body>
+</html>
