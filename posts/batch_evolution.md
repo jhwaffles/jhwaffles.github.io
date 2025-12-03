@@ -8,42 +8,53 @@ permalink: /posts/batch_evolution/
 
 ## Overview
 
-In this post, I go over applications of batch evolution modeling for process monitoring. What is batch evolution modeling? It's a framework of methods that allow us to track processes holistically, and evaluate batches in progress. It incorporates concepts from data science/machine learning as well as statistical process control to solve problems. Although the context is in biomanufacturing and bioprocess engineering, the concepts can be applied to other fields (anomaly detection, manufacturing, any type of process monitoring.)
+In this post, I go over applications of batch evolution modeling for process monitoring. What is batch evolution modeling? Batch evolution modeling a framework of methods that allow us to track processes holistically, and evaluate batches in progress. It incorporates concepts from data science/machine learning as well as statistical process control that allows us to solve real world problems. Although the context is in biomanufacturing and bioprocess engineering, the concepts can be applied to other fields (anomaly detection, manufacturing, any type of process monitoring.)
 
-Let's say we have an established process that we are running periodically. With enough runs, we've established how runs are supposed to trend. How do evaluate whats 'normal' for the process? How do we tell if a batch in-progress is behaving 'normally'? If there is a deviation, do we have enough evidence to determine whether we 'scrap' the batch, saving time and costs? We can answer all of these with batch evolution modeling! Existing software (SIMCA) lets you do this, but I will show that it's possible to do it in Python!
+Let's say we have an established process that we are running periodically. With enough runs, we've established how runs are supposed to trend. How do we evaluate whats 'normal' for the process? How do we tell if a batch in-progress is behaving 'normally' or deviating? And if it is a deviating, do we have enough evidence to determine whether we 'scrap' the batch, saving time and costs? We can answer all of these with batch evolution modeling! Existing software (SIMCA) lets you do this, but I implement this in Python.
 
 Data and code as well as reference literatures can be found on Github.
 
 ## Introduction
 
-We work with a synthetic dataset of 17 runs, based off real world bioprocesses where we are making some kind of product, such as antibody, in a bioreactor. Along the way, samples are taken and measured for the product (titer, mg/mL), as well as metabolites (acetate, glucose, ammonia, phosphate, pyruvate).
+We work with a synthetic dataset of 17 runs, based off real world bioprocesses where we are making antibody as a product in a bioreactor. Along the way, samples are taken and measured for the product (titer, or concentration in mg/mL), as well as metabolites. It is common to collect sensor data such as dO%, pH, agitation speed, temperature, etc. In this example, we monitor 5 metabolites (acetate, glucose, ammonia, phosphate, pyruvate)
 
-Data in bioprocesses are generally very high dimensional. In this example, we monitor 5 metbolites, but there can be many more measurements through sensor data such as dO%, pH.
-[image]
+[image of sensors]
 
 The first step is to do exploratory data analysis.
 
 [image]
 
-While its important to view the trends, we can use batch evolution modeling is useful for looking at holistically. In these types of scenarios, we are workign with high dimensinoal data (Lots of features vs observations), where features are heavily correlated with each other. Batch evolution modeling allows us to compress the data so we can easily track the most important components by utilizing Partial Least Squares (PLS). Furthermore it is interpretable in that we can pull out the most important contributors to a 'bad' or 'deviated' batch. How is this done?
+While its important to view the trends, we can use batch evolution modeling is useful for looking at holistically. In these types of scenarios, we are workign with high dimensinoal data (Lots of features vs observations), and often features are heavily correlated with each other. Batch evolution modeling allows us to compress the data so we can easily track the most important components by utilizing Partial Least Squares (PLS). Furthermore it is interpretable in that we can pull out the most important contributors to a 'bad' or 'deviated' batch. How is this done?
 
-## Step 1 - Data cleaning and Build PLS Model on 'good' batches
-
+## Data Preprocessing
 Data must be prepared. We gather all historical 'good' batches.
 
-Get data into matrix in the form of
+Get data into matrix in the form of. Define Y. It's a measure of a process maturity. in this instance its time.
 
-Center and scale. This is important because \_\_.
+[import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler
+from sklearn.cross_decomposition import PLSRegression
+import sklearn.model_selection as skm
+import plotly.graph_objects as go
 
-[code]
+df = pd.read_excel("synthesized_data.xlsx")
+X_cols = ['acetate_mM', 'glucose_g_L', 'magnesium_mM', 'nh3_mM', 'phosphate_mM']
+batch_col='batch_id',
+time_col='batch_time_h',
+y_time_col='batch_time_h',
+df_model = df_train[[self.time_col, self.batch_col] + self.X_cols].copy()
+df_model = df_model.sort_values([self.batch_col, self.time_col])
+X = df_model[self.X_cols].to_numpy()
+y = df_model[[self.y_time_col]].to_numpy()  # time as y
+]
+Center and scale. This is important because \_\_. We can use sklearn library here.
 
-Define Y. It's a measure of a process maturity. in this instance its time.
+self.scaler_X = StandardScaler()
+X_scaled = self.scaler_X.fit_transform(X)
 
-Build PLS Model.
-
-Get Scores.
-
-[DataFrame]
+Initialize PLS Model.
 
 ### What is PLS?
 
@@ -51,7 +62,34 @@ USed in chemometrics, and similar industries.
 Like PCA, it uses principal components  
 Where scores and loadings are determined. Loadings are the principal compeonets, or vectors, that maximize the variance in the data set. Scores are the coefficient. These two can be used to get a reconstructed X.
 Unlike PCA, it is predicting on y.
+
 To determine the number of components to use, we can use an elbow plot.
+
+[kfold = skm.KFold(n_splits, random_state=0, shuffle=True)
+        pls = PLSRegression()
+        param_grid = {'n_components': range(1, max_components + 1)}
+
+        grid = skm.GridSearchCV(
+            pls,
+            param_grid,
+            cv=kfold,
+            scoring='neg_mean_squared_error'
+        )
+        grid.fit(X_scaled, y)
+]
+
+Finalize Model (Hyperparamater tuning)
+after choosing unmber of components
+[self.pls_scores = PLSRegression(n_components=self.n_components)
+self.pls_scores.fit(self._X_scaled_scores, self._y_scores)
+X_scaled=self._X_scaled_scores
+T = self.pls_scores.transform(X_scaled)  #these are scores
+P = self.pls_scores.x_loadings_
+]
+
+Get Scores.
+
+[DataFrame]
 
 ## Step 2 - Plot
 
@@ -65,7 +103,7 @@ Plots.
 
 Predict titer. DmodX, T2. out of scope for this post.
 
-Monitor incoming batches, determine if things are deviating!
+Monitor incoming batches, determine if things are deviating! Also important to monitor the model itself. To see if we see batch drift, or model drift. Update the training set with new batches.
 
 ### Key Challenges encountered:
 
