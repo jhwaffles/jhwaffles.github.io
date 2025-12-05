@@ -26,15 +26,17 @@ The first step is to do exploratory data analysis.
 
 While its important to view the trends, we can use batch evolution modeling is useful for looking at holistically. In these types of scenarios, we are workign with high dimensinoal data (Lots of features vs observations), and often features are heavily correlated with each other. Batch evolution modeling allows us to compress the data so we can easily track the most important components by utilizing Partial Least Squares (PLS). Furthermore it is interpretable in that we can pull out the most important contributors to a 'bad' or 'deviated' batch. How is this done?
 
-
 Data must be prepared. We collect and label all historical 'good' batches.
 
+["/images/df_input2.png"]
 
 ## Step 1 - Model Batch Maturity on Time Series 
 
-Get data into matrix where samples points (this includes each batch and sample point) make up rows while features make up columns. We define Y as process maturity - in this instance we use batch_time.
+Get data into matrix where samples points (this includes each batch and sample point) make up rows while features make up columns. Let's call batches N, sample points J, and measurement columns K. We define Y as process maturity - in this instance we use batch_time.
 
-["/images/df_input2.png"]
+### Data Preprocessing
+
+
 
         [import numpy as np
         import pandas as pd
@@ -71,6 +73,8 @@ Each component has scores (where each sample sits on that component) and loading
 
 In batch evolution, local time is used as the Y-variable: it forces the PLS model to find the specific variation in the process variables (X) that describes the evolution of the batch over time.
 
+### Choosing number of components
+
 To determine the number of components to use, we use cross validation and fit models with 1,2,3..components, and plot prediction error vs number of components. We choose the point where error stops improving meaningful (the "elbow"), balancing good prediction performance against overfitting. 
 
         [kfold = skm.KFold(n_splits, random_state=0, shuffle=True)
@@ -86,45 +90,73 @@ To determine the number of components to use, we use cross validation and fit mo
         grid.fit(X_scaled, y)
         ]
 
-Finalize Model (Hyperparamater tuning)
-after choosing unmber of components
+["step1_cv_n_components"]
+
+### Finalize model and get scores
+
+After choosing number of components, we can rerun the model and
+
         [self.pls_scores = PLSRegression(n_components=self.n_components)
         self.pls_scores.fit(self._X_scaled_scores, self._y_scores)
         X_scaled=self._X_scaled_scores
-        T = self.pls_scores.transform(X_scaled)  #these are scores
-        P = self.pls_scores.x_loadings_
+        T = self.pls_scores.transform(X_scaled)  #these are scores.
+        P = self.pls_scores.x_loadings_ #loadings
         ]
 
-Get Scores.
+The scores output in T. The dimensions are (NxJ)xA.
 
 ["/images/df_scores"]
 
 ## Step 2 - Batch Traces.
 
-Rearrange the matrix. To
-Calculate metrics.
+Next, we rearrange the scores matrix to wide form. (Nx(AxJ)
+
+    long = pls_scores_df.melt(
+        id_vars=[batch_col, time_col],
+        value_vars=comp_cols,
+        var_name='component',
+        value_name='score'
+    )
+
+    wide = (
+        long
+        .pivot(index=batch_col, columns=['component', time_col], values='score')
+        .sort_index(axis=1, level=[0, 1])
+    )
+
+There should be 1 row for each batch, and 1 column for each component x time point.
 
 ["/images/df_X_t.png"]
+    
+From here we can calculate metrics such as average and standard deviations to use in our control charts. We do this for each component and time point.
 
-Monitor incoming batches, determine if things are deviating! Also important to monitor the model itself.
-Plots.
+With this format, we've established averages and upper/lower bounds for 'good' batches, as they evolve. For the bounds, we use +/-3 SD (other bounds can be chosen), 
 
-## Step 3 - Predict outcome of entire batches.
+This is useful as now we have a way to evaluate incoming batches and determine whether they are behaving or deviating! For example, if an incoming batch deviates by crossing the threshold, it's very likely not a 'good' batch.  allowing the engineering supervisor to make the decision to scrap the batch. 
+
+["new_batch_monitor_comp1"]
+
+## Step 3 - Predict outcome of batches (titer)
 
 Predict titer. DmodX, T2. out of scope for this post.
 
- To see if we see batch drift, or model drift. Update the training set with new batches.
+To see if we see batch drift, or model drift. Update the training set with new batches.
 
 ### Key Challenges encountered:
 
-### What happens if time points dont line up? It can be done due the nature of solving for y time first (Not shown here explicitly)
+### What happens if time points dont line up? 
 
-### prediction with incomplete batches? Early predictions? yes!
+It can be done. or a new batch, use the pls.predict to get y_pred, even if we have timestamps logged for the samples (these are mismatched like i m entioned). then we take that y_pred (which is a measure of maturity), and we do the same workflow for getting scores and plotting scores, but use the y_pred to plot.
+
+### prediction with incomplete batches? Early predictions? yes!  
+he rearranged score vectors derived from the Level 1 model are accumulated only up to the current time j. This partial trace forms the XT portion of the predictor matrix for the new batch. Since the batch is incomplete, the score vector (XT row vector) contains only the scores corresponding to time points 1 through j (i.e., A×j scores). The remaining columns are missing.
 
 ### Why is there 3 SD chosen as intervals?
+but 3 SD bounds are used in BEM because they define the boundary of the "normal pattern of evolution" with a high degree of certainty, ensuring that batches flagged outside this limit are strong candidates for being classified as "definite deviators
 
 ### When is this NOT applicable?
-
+good at handling continuous, numerical data such as pr 
+ategorical variables must be transformed into a numerical representation, typically through dummy variables or one-hot encoding
 x
 
 ## Ending Thoughts (What did we accomplish)?
