@@ -8,6 +8,13 @@ permalink: /posts/cgm/
 
 In this project, I explored the relationship between **diet, exercise, and personal glycemic response** using acquired **Continuous Glucose Monitor (CGM) data** acquired with a Freestyle Libre device. The goal was to build a model that could predict glucose spikes based on meal composition and other factors, providing a framework for personalized nutrition insights.
 
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="/images/fulls/cgm_user_male.png" alt="agp" width="800" style="display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+    CGM and user
+  </figcaption>
+</figure>
+
 ## Motivation
 
 The potential of personalized nutrition is immense, and the rich data from CGMs can offer powerful insights. This project is also personal - as someone diagnosed with pre-diabetes, I wanted to move beyond the limitations of the A1C test – a lagging three month average of blood glucose levels – to understand the immediate, real-time impact of my lifestyle choices on my glucose levels.
@@ -23,7 +30,7 @@ The analysis is based on two primary data sources - CGM glucose data and time-st
 <figure style="text-align: center; margin: 2em 0;">
   <img src="/images/ambulatory_glucose_profile.png" alt="agp" width="800" style="display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
-    Figure 1: Ambulatory glucose profile
+    Ambulatory glucose profile
   </figcaption>
 </figure>
 ---
@@ -39,7 +46,7 @@ I matched each user-logged meal to a subsequent glucose peak. To do this, I crea
 <figure style="text-align: center; margin: 2em 0;">
   <img src="/images/event_windows.png" alt="event windows" width="800" style="display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
-    Figure 2: Calculated Event Windows
+    Calculated Event Windows
   </figcaption>
 </figure>
 
@@ -69,7 +76,7 @@ This process effectively transformed messy text logs into a clean, structured da
 <figure style="text-align: center; margin: 2em 0;">
   <img src="/images/LLM_intermediate.png" alt="intermediate logs" width="800" style="display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
-    Figure 3: Intermediate LLM logs
+    Intermediate LLM logs
   </figcaption>
 </figure>
 
@@ -94,7 +101,7 @@ I started with a simple **linear regression model predicting glucose AUC based o
 <figure style="text-align: center; margin: 2em 0;">
   <img src="/images/glucose_auc_carbs_by_user.png" alt="simple model" width="500" style="display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
-    Figure 4: Basic Model - AUC by carbs by User.
+    Basic Model - AUC by carbs by User.
   </figcaption>
 </figure>
 
@@ -103,7 +110,7 @@ I then built slightly more complex **model predicting glucose auc based off a fe
 <figure style="text-align: center; margin: 2em 0;">
   <img src="/images/jmp_model_auc.png" alt="jmp_auc" width="500" style="display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
-    Figure 5: AUC Model - Carbs, Mealtimes, and Exercise
+    AUC Model - Carbs, Mealtimes, and Exercise
   </figcaption>
 </figure>
 
@@ -122,7 +129,7 @@ Another peak metric we calculated is rate of rise. I then built a **model predic
 <figure style="text-align: center; margin: 2em 0;">
   <img src="/images/jmp_model_rate_of_rise.png" alt="jmp_ror" width="500" style="display: block; margin: 0 auto;" />
   <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
-    Figure 6: Rate of Rise Model
+    Rate of Rise Model
   </figcaption>
 </figure>
 

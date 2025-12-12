@@ -4,41 +4,52 @@ title: "Batch Evolution"
 permalink: /posts/batch_evolution/
 ---
 
-# Batch Evolution Modeling: Determining what's a good batch.
+# Batch Evolution Modeling:
 
 ## Overview
 
-In this post, I go over applications of batch evolution modeling for process monitoring. What is batch evolution modeling? Batch evolution modeling a framework of methods that allow us to track processes holistically, and evaluate batches in progress. It incorporates concepts from data science/machine learning as well as statistical process control that allows us to solve real world problems. Although the context is in biomanufacturing and bioprocess engineering, the concepts can be applied to other fields (anomaly detection, manufacturing, any type of process monitoring.)
+In this post, I go over applications of batch evolution modeling, used in process monitoring. **What is batch evolution modeling?** Batch evolution modeling is a framework of methods that allow us to track processes holistically, evaluate batches in progress, and predict final outcomes. It incorporates concepts from data science/machine learning as well as (multivariate) statistical process control. Although the context is in biomanufacturing and bioprocess engineering, the concepts can be applied to other fields for process monitoring and anomaly detection (manufacturing, forecasting).
 
-Let's say we have an established process that we are running periodically. With enough runs, we've established how runs are supposed to trend. How do we evaluate whats 'normal' for the process? How do we tell if a batch in-progress is behaving 'normally' or deviating? And if it is a deviating, do we have enough evidence to determine whether we 'scrap' the batch, saving time and costs? We can answer all of these with batch evolution modeling! Existing software (SIMCA) lets you do this, but I implement this in Python.
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="/images/reactor_image.png" alt="jmp_auc" width="500" style="display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+    Batch in-progress being monitored.
+  </figcaption>
+</figure>
+
+What are some use cases? Let's say we have an established process that we are running periodically. As we generate data from runs, we establish a "Golden Batch" trajectory - or how a run is supposed to trend. What's 'normal' for a 'good' batch? How do we tell if a batch in-progress is behaving 'normally' or deviating? Crucially, if it is deviating, can we diagnose it early enough to intervene, or do we have enough evidence to 'scrap' the batch immediately, **saving time and costs**? We can answer all of these with batch evolution modeling! Existing software (SIMCA) lets you do this - here I implement this in Python.
 
 Data and code as well as reference literatures can be found on Github.
 
 ## Introduction
 
-We work with a synthetic dataset of 17 runs, based off real world bioprocesses where we are making antibody as a product in a bioreactor. Along the way, samples are taken and measured for the product (titer, or concentration in mg/mL), as well as metabolites. It is common to collect sensor data such as dO%, pH, agitation speed, temperature, etc. In this example, we monitor 5 metabolites (acetate, glucose, ammonia, phosphate, pyruvate)
+In this scenario we work with a synthetic dataset of 17 runs based off a real world bioprocess where we are making antibody as a product in a bioreactor. Along the way, samples are taken and measured for product concentration (titer in mg/mL units) as well as metabolites. It is common to collect sensor data such as dO%, pH, agitation speed, temperature, etc. In this example, we monitor 5 metabolites (acetate, glucose, ammonia, phosphate, pyruvate). We can familiarize ourselves with the trends with exploratory data analysis.
 
-[image of sensors]
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="/images/fulls/all_plots_2x3.png" alt="titer and metabolite trends" width="800" style="display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+    Titer and Metabolite Trends
+  </figcaption>
+</figure>
 
-The first step is to do exploratory data analysis.
+We can tell the process is a reaction with hourly sample points over the course of 24 hours. Titer rises and maxes out at around 16 hours, then falls, likely due to dilution effects. Other metabolites have different profiles. Keep in mind this is a cleaned and simplified synthetic data set.
 
-[image]
+## Step 1 - Batch Evolution Modeling - Training
 
-While its important to view the trends, we can use batch evolution modeling is useful for looking at holistically. In these types of scenarios, we are workign with high dimensinoal data (Lots of features vs observations), and often features are heavily correlated with each other. Batch evolution modeling allows us to compress the data so we can easily track the most important components by utilizing Partial Least Squares (PLS). Furthermore it is interpretable in that we can pull out the most important contributors to a 'bad' or 'deviated' batch. How is this done?
+After compiling all historical 'good' batches into our dataframe below, we must preprocess the data further before training our model.
 
-Data must be prepared. We collect and label all historical 'good' batches.
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="/images/fulls/df_input.png" alt="jmp_auc" width="800" style="display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+    Input Data
+  </figcaption>
+</figure>
 
-["/images/df_input2.png"]
-
-## Step 1 - Model Batch Maturity on Time Series 
-
-Get data into matrix where samples points (this includes each batch and sample point) make up rows while features make up columns. Let's call batches N, sample points J, and measurement columns K. We define Y as process maturity - in this instance we use batch_time.
+First, we ensure the data is in the right format, where each batch and sample point make up rows while features, or measurements make up columns. We'll denote this as N batches, J sample points, and K measurement columns. The resulting matrix has N x J rows and K columns. We define Y as process maturity - in this instance we use batch_time.
 
 ### Data Preprocessing
 
-
-
-        [import numpy as np
+        import numpy as np
         import pandas as pd
         import matplotlib.pyplot as plt
         from sklearn.preprocessing import StandardScaler
@@ -55,9 +66,9 @@ Get data into matrix where samples points (this includes each batch and sample p
         df_model = df_model.sort_values([self.batch_col, self.time_col])
         X = df_model[self.X_cols].to_numpy()
         y = df_model[[self.y_time_col]].to_numpy()  # time as y
-        ]
+        
 
-Center and scale. This is important because different features have different magnitudes and we want to avoid features with high values from dominating. There is an added bonus in centering at 0 since it makes subtracting the mean (0) easier. We can use sklearn library here.
+Next, we **standardize X**. This is important because different features have different magnitudes and we want to avoid features with high values from dominating. Geometrically, centering at 0 allows us to interpret as distance from origin (which is nice for calculations). We can use sklearn library here.
 
         self.scaler_X = StandardScaler()
         X_scaled = self.scaler_X.fit_transform(X)
@@ -67,17 +78,25 @@ Next we initialize the Partial Least Squares (PLS) Model.
 ### What is PLS?
 
 Partial Least Squares (PLS) is a supervised regression method used when you have many, often correlated predictors (X) and want to predict one or more responses (Y). It's commonly used in chemometrics, spectral analysis, and omics/gene work because it handles high dimensional data and collinearity well.
-Like PCA, PLS builds latent components (scores and loadings) that are linear combinations of the original X-variables. However, instead of just capturing the variance in X, PLS chooses these components to maximize the covariance between X and Y, meaning it finds the variation in X that is most useful for predicting Y.
+Like PCA, PLS builds latent components (scores and loadings) that are linear combinations of the original X-variables. However, instead of just capturing the variance in X, PLS chooses these components to maximize the covariance between X and Y, meaning it finds the variation in X that is most useful for predicting Y. The model is composed of the following components:
 
-Each component has scores (where each sample sits on that component) and loadings/weights (how each variable contributes). Using these, you can both approximate X and build a prediction model for Y.
+$X = TP' + E$
+
+$y = Tc + f$
+
+* X are the inputs.
+* y is the output.
+* T is score matrix. These are the new 'features' describing the state of the batch. It's calculated by X.dot(W) (where W is the projection matrix that maps from X space to A space)
+* P,c are the loadings for X and y. 
+* E, f contain the residuals. 
 
 In batch evolution, local time is used as the Y-variable: it forces the PLS model to find the specific variation in the process variables (X) that describes the evolution of the batch over time.
 
 ### Choosing number of components
 
-To determine the number of components to use, we use cross validation and fit models with 1,2,3..components, and plot prediction error vs number of components. We choose the point where error stops improving meaningful (the "elbow"), balancing good prediction performance against overfitting. 
+To determine the number of components to use, we use cross validation and fit models with 1,2,3... components, and plot prediction error vs number of components. We choose the point where error stops improving meaningful (the "elbow"), balancing good prediction performance against overfitting. 
 
-        [kfold = skm.KFold(n_splits, random_state=0, shuffle=True)
+        kfold = skm.KFold(n_splits, random_state=0, shuffle=True)
         pls = PLSRegression()
         param_grid = {'n_components': range(1, max_components + 1)}
 
@@ -88,28 +107,41 @@ To determine the number of components to use, we use cross validation and fit mo
             scoring='neg_mean_squared_error'
         )
         grid.fit(X_scaled, y)
-        ]
+        
 
-["step1_cv_n_components"]
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="/images/fulls/step1_cv_n_components.png" alt="jmp_auc" width="500" style="display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+    Cross validation - n components plot
+  </figcaption>
+</figure>
 
 ### Finalize model and get scores
 
-After choosing number of components, we can rerun the model and
+2 components is sufficient here. After choosing number of components, we can specify 2 components and finalize the model.
 
-        [self.pls_scores = PLSRegression(n_components=self.n_components)
+        self.pls_scores = PLSRegression(n_components=self.n_components)
         self.pls_scores.fit(self._X_scaled_scores, self._y_scores)
         X_scaled=self._X_scaled_scores
         T = self.pls_scores.transform(X_scaled)  #these are scores.
         P = self.pls_scores.x_loadings_ #loadings
-        ]
+        
+The scores are captured in T, with dimensions (NxJ)xA.
 
-The scores output in T. The dimensions are (NxJ)xA.
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="/images/fulls/df_scores.png" alt="jmp_auc" width="800" style="display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+    T, Scores in dataframe.
+  </figcaption>
+</figure>
 
-["/images/df_scores"]
+So we have constructed a PLS model (pls_model_1) that fits to a training set of 'good' batches. We've extracted a scores matrix, which is a compressed form of the data that best summarizes variation in X that drives the process forward in time.
 
-## Step 2 - Batch Traces.
+## Step 2 - Batch Traces and Monitoring
 
-Next, we rearrange the scores matrix to wide form. (Nx(AxJ)
+### Rearrange data and calculate summary metrics
+
+Next, we rearrange the scores matrix to wide form, X_T, with dimensions Nx(AxJ).
 
     long = pls_scores_df.melt(
         id_vars=[batch_col, time_col],
@@ -126,43 +158,132 @@ Next, we rearrange the scores matrix to wide form. (Nx(AxJ)
 
 There should be 1 row for each batch, and 1 column for each component x time point.
 
-["/images/df_X_t.png"]
-    
-From here we can calculate metrics such as average and standard deviations to use in our control charts. We do this for each component and time point.
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="/images/fulls/df_X_t.png" alt="jmp_auc" width="800" style="display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+    X_T, Scores in wide form.
+  </figcaption>
+</figure>
 
-With this format, we've established averages and upper/lower bounds for 'good' batches, as they evolve. For the bounds, we use +/-3 SD (other bounds can be chosen), 
+Using X_T, we can calculate metrics such as average and standard deviations to use in our control charts. We do this for each component and time point. With this format, it is easy to establish averages and upper/lower bounds for 'good' batches as they evolve over time. For the bounds, we use +/-3 SD.
 
-This is useful as now we have a way to evaluate incoming batches and determine whether they are behaving or deviating! For example, if an incoming batch deviates by crossing the threshold, it's very likely not a 'good' batch.  allowing the engineering supervisor to make the decision to scrap the batch. 
+### Monitoring incoming batches
 
-["new_batch_monitor_comp1"]
+Now we can plot incoming batches against the training set and upper/lower bounds and determine whether they are behaving or deviating.
 
-## Step 3 - Predict outcome of batches (titer)
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="/images/fulls/new_batch_monitor_comp1.png" alt="jmp_auc" width="800" style="display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+    Deviating Batch
+  </figcaption>
+</figure>
 
-Predict titer. DmodX, T2. out of scope for this post.
+For example, if an incoming batch deviates by crossing the threshold of +3SD in component 1, it's very likely not a 'good' batch. **By using batch evolution modeling, an engineering supervisor can make the decision to scrap the batch mid-run, saving substantial time and masterial costs**
 
-To see if we see batch drift, or model drift. Update the training set with new batches.
+### Contribution Scores
 
-### Key Challenges encountered:
+Once we detect a deviation (the trace crosses the +3SD limit in component 1) - we can examine **what caused it?**. We answer this by calculating contribution scores. Conceptually we can think of contribution as the weight of the variable (W) multiplied by how far the variable is deviating from the average (X_scaled). 
 
-### What happens if time points dont line up? 
+        x_raw = row[self.X_cols].to_numpy().reshape(1, -1)
+        x_scaled = self.scaler_X.transform(x_raw)  #(1xk)
+        w = self.pls_scores.x_rotations_      #rotations
+        w_a = w[:, comp_index].reshape(1,-1) #(1xk)
+        contrib_scaled = x_scaled * w_a         # (1xk)
 
-It can be done. or a new batch, use the pls.predict to get y_pred, even if we have timestamps logged for the samples (these are mismatched like i m entioned). then we take that y_pred (which is a measure of maturity), and we do the same workflow for getting scores and plotting scores, but use the y_pred to plot.
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="/images/fulls/contrib_plot_comp1.png" alt="jmp_auc" width="800" style="display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+    Contributors to Score 
+  </figcaption>
+</figure>
 
-### prediction with incomplete batches? Early predictions? yes!  
-he rearranged score vectors derived from the Level 1 model are accumulated only up to the current time j. This partial trace forms the XT portion of the predictor matrix for the new batch. Since the batch is incomplete, the score vector (XT row vector) contains only the scores corresponding to time points 1 through j (i.e., A×j scores). The remaining columns are missing.
+These contributions show which value is driving the score to be high at that point. The plot indicates acetate has a positive contribution to the component 1 score. We can confirm this by examining the data and find indeed, there was an acetate spike for that time point. So effectively **after a deviation is detected (crossing the threshold), we can diagnose what contributed to this deviation**. Keep in mind, contributions can show up in different components - it all depends in how the model decomposed the data. In batch evolution modeling, it's common for component 1 to represent batch maturity, and for componenet 2 to represent quadratic evolution (shape). 
 
-### Why is there 3 SD chosen as intervals?
-but 3 SD bounds are used in BEM because they define the boundary of the "normal pattern of evolution" with a high degree of certainty, ensuring that batches flagged outside this limit are strong candidates for being classified as "definite deviators
+So we have established a normal range for 'good batches', and used summary statistics in component space to detect deviations. We then use the contributions to diagnose what contributed to that deviation. Crucially, we can quickly utilize this approach during an ongoing batch to determine whether a batch is 'deviating' based on a set threshold.
 
-### When is this NOT applicable?
-good at handling continuous, numerical data such as pr 
-ategorical variables must be transformed into a numerical representation, typically through dummy variables or one-hot encoding
-x
+## Step 3 - Batch Level Modeling
+
+We've used batch evolution to summarize and monitor batches across a time series. Now we extend the analysis to batch level modeling, where we use our time series data as well as our background data (such as initial conditions) to predict an outcome (such as final titer). We take the scores (X_T), merge (place side-by-side horizontally) with our background data (Z), to get X2, which also has one row for each batch.
+
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="/images/fulls/merge_batch.png" alt="jmp_auc" width="800" style="display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+    Data for PLS 2 (S. Wold et al)
+  </figcaption>
+</figure>
+
+With this we train another PLS model (PLS2). Now we can use PLS model 2 to predict titers for a test set. For prediction of new batches, we first pass new raw time-series data through our Step 1 model to extract the scores (X_T). These scores are what we merge with Z to feed into the Batch Level Model.
+
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="/images/fulls/predicted_v_actual.png" alt="jmp_auc" width="800" style="display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+    Predicted vs Actual (PLS2)
+  </figcaption>
+</figure>
+
+An important application of this can be to get an early readout, and examine if a batch likely has low yield, while waiting for the official result to come in.
+
+### Continuous monitoring
+
+Finally, **a model is only as good as the data it was trained on**. It's important to contiously monitor the model for drift (aging equipment, introduction of new raw materials, etc). The training set should be updated periodically to reflect the current process reality.
+
+## Visual Representation (Flow Diagram)
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="/images/fulls/BEM_Flow_Diagram_Training.png" alt="jmp_auc" width="800" style="display: block; margin: 0 auto;" />
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+    Flow Diagram for Training.
+  </figcaption>
+</figure>
+
+## Follow-up Questions
+
+### What happens if the sampling points dont line up? 
+
+This is often the case in the real world, where sampling doesnt happen exactly on the hourly interval. These methods are robust and can handle uneven sample points. Because PLS1 predicts batch maturity, we can train the model on unaligned data. The model then can predict y_pred (batch maturity) for all sample points. Then we can align data points on batch maturity axis at regular intervals (0,10,20,30%..) using interpolation. Once aligned, we can then calculate the control limits.
+
+### Can we make early predictions on final outcomes on ongoing batches? 
+
+Yes! Essentially we can train on sub-models up to intermediate points (e.g. "10-hour model".)
+
+### Why is +/-3 SD chosen as intervals?
+
++/-3 SD bounds are used in batch evolution modeling because they define strict boundaries of the "normal pattern of evolution" with a high degree of certainty (taking elements from statistical process control). Batches that cross these boundaries are "definite deviators". We could also use +/-2 SD for more stricter controls.
+
+### Are there statistical indicators for batch similarity?
+
+DmodX (Distance from Model X), Hotelling's T2 are often used and represent deviation from 'good batches.' 
+
+### When is batch evolution modeling NOT useful?
+
+* **When you lack a definition of "Normal".** Batch evolution modeling relies on historical reference data that you can confidently label as "good". 
+* **If you're only monitoring few variables.** If you're only monitoring 2 or 3 variables, you might as well plot the original variables. BEM shines when you need to summarize the interaction of many variables into a single trajectory.
+* **When Alignment is Impossible.** BEM assumes there is some evolutionary trajectory that can be aligned to a maturity axis.
+* **When the process is "Steady State".** BEM is designed for processes that have a start and an end.
 
 ## Ending Thoughts (What did we accomplish)?
 
-We learned how to use multivariate analysis to monitor batches in summarized way (latent variables). Good for high dimensional data!
-We learned how to use build a model based off a training set, then apply new batches to evaluate their health.
-We did using Python, sklearn, numpy, open source tools.
+In this guide, we leveraged batch evolution modeling to holistically evaluated processes. 
 
-You can how see how useful this is for something with aLOT of signals.
+* **Scores & Components -** We used Partial Least Squares (PLS) to compress high-dimensional, noisy data into "Scores" that represent the state of the process.
+
+* **Golden Batches -** We constructed a model based off a training set of historical good batches, creating a trajectory that defines "normal."
+
+* **Health Monitoring -** We can instantly apply the trained model to evaluate ongoing batches to assess their health.
+
+* **Predicting outcomes -** We extended to batch level monitoring (PLS2) to be able to predict final outcomes of a batch.
+
+* **Open Source Stack -** We achieved this using Python, sklearn, numpy, pandas.
+
+**Why this is important?**
+Industrial data is often complex and heavily correlated. By using batch evolution modeling, we can evalute the process holistically. Some advantages include:
+
+* **Early Detection -**: We can see a batch drifting out of the "Golden Tunnel" hours before a single sensor hits an alarm limit
+* **Interpretability -**: When a deviation occurs, we don't just guess; we can look at the Variable Contributions to see exactly which combination of signals caused the problem.
+
+## References:
+
+_S. Wold et al. Chemometrics and Intelligent Laboratory Systems 44 (1998) 331–340_
+
+_https://www.sartorius.com/en/knowledge/science-snippets/understanding-the-basics-of-batch-process-data-analytics-507206_
+
+_https://scikit-learn.org/stable/modules/generated/sklearn.cross_decomposition.PLSRegression.html_
