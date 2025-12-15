@@ -8,7 +8,7 @@ permalink: /posts/batch_evolution/
 
 ## Overview
 
-In this post, I go over applications of batch evolution modeling, used in process monitoring. **What is batch evolution modeling?** Batch evolution modeling is a framework of methods that allow us to track processes holistically, evaluate batches in progress, and predict final outcomes. It incorporates concepts from data science/machine learning as well as (multivariate) statistical process control. Although the context is in biomanufacturing and bioprocess engineering, the concepts can be applied to other fields for process monitoring and anomaly detection (manufacturing, forecasting).
+In this post, I go over applications of batch evolution modeling, used in process monitoring. What is batch evolution modeling? **Batch evolution modeling is a framework of methods that allow us to track processes holistically, evaluate batches in progress, and predict final outcomes.** It incorporates concepts from data science/machine learning as well as (multivariate) statistical process control. Although the context is in biomanufacturing and bioprocess engineering, the concepts can be applied to other fields for process monitoring and anomaly detection (manufacturing, forecasting).
 
 <figure style="text-align: center; margin: 2em 0;">
   <img src="/images/reactor_image.png" alt="jmp_auc" width="500" style="display: block; margin: 0 auto;" />
@@ -19,7 +19,7 @@ In this post, I go over applications of batch evolution modeling, used in proces
 
 What are some use cases? Let's say we have an established process that we are running periodically. As we generate data from runs, we establish a "Golden Batch" trajectory - or how a run is supposed to trend. What's 'normal' for a 'good' batch? How do we tell if a batch in-progress is behaving 'normally' or deviating? Crucially, if it is deviating, can we diagnose it early enough to intervene, or do we have enough evidence to 'scrap' the batch immediately, **saving time and costs**? We can answer all of these with batch evolution modeling! Existing software (SIMCA) lets you do this - here I implement this in Python.
 
-Data and code as well as reference literatures can be found on Github.
+Data and code as well as reference literatures can be found on my [Github](https://github.com/jhwaffles/batch_evolution_modeling).
 
 ## Introduction
 
